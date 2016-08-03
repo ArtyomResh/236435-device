@@ -1,7 +1,7 @@
 ﻿# Личный проект «Девайс»
 
 * Студент: [Артём Реш](https://up.htmlacademy.ru/htmlcss/14/user/236435).
-* Наставник: [Николай Маркелов](https://htmlacademy.ru/profile/id235291).
+* Наставник: [Николай Маркелов](https://up.htmlacademy.ru/htmlcss/14/user/235291).
 
 ---
 
