@@ -17,23 +17,23 @@
         <div class="site-search">
           <form>
             <label for="search">
-              <img src="http://placehold.it/20x20" width="20" height="20" alt="Поиск">
+              <!--Здесь будет иконка из иконочного шрифта в виде лупы-->
             </label>
             <input type="search" name="search" id="search" placeholder="Поиск по сайту">
           </form>
         </div>
 
         <div class="user-block">
-          <a href="#" class="login"><img src="http://placehold.it/20x20" width="20" height="20" alt="Логин">Войти</a>
+          <a href="#" class="login">Войти</a>
         </div>
 
         <div class="user-options">
           <ul>
             <li>
-              <a href="#"><img src="http://placehold.it/20x20" width="20" height="20" alt="Сравнить">Сравнить</a>
+              <a href="#">Сравнить</a>
             </li>
             <li>
-              <a href="#"><img src="http://placehold.it/20x20" width="20" height="20" alt="Корзина">Корзина</a>
+              <a href="#">Корзина</a>
             </li>
           </ul>
         </div>
@@ -81,14 +81,14 @@
 
       <!--Слайдер промо-->
 
-      <div class="slider promo">
+      <section class="slider promo">
 
         <!--Первый слайд-->
 
-        <article class="promo-content selfie-content">
+        <article class="promo-content">
           <img src="http://placehold.it/420x527" width="420" height="527" alt="Селфи палка">
           <span class="promo-number">- 01</span>
-          <div class="promo-description selfie-description">
+          <div class="promo-description">
             <b>
               Делай селфи,<br>
               как Бен Стиллер!
@@ -99,7 +99,7 @@
             </p>
           </div>
 
-            <a href="#" class="promo-details selfie-details">Подробнее</a>
+            <a href="#" class="promo-details">Подробнее</a>
 
             <div class="slider-control">
               <ul>
@@ -114,30 +114,27 @@
               </ul>
             </div>
 
-            <div class="promo-atributes selfie-atributes">
-              <ul>
-                <li>
-                  8,5 метров<br>
-                  <span class="item-atributes">Длинна палки</span>
-                </li>
-                <li>
-                  5 кг<br>
-                  <span class="item-atributes">Вес палки</span>
-                </li>
-                <li>
-                  Карбон<br>
-                  <span class="item-atributes">Материал</span>
-                </li>
-              </ul>
+            <div class="promo-attribute">
+              <span class="promo-attrTittle">8,5 метров</span> <!--attr-attribute-->
+              <span class="promo-attrDesc">Длинна палки</span> <!--desc-decription-->
             </div>
+            <div class="promo-attribute">
+              <span class="promo-attrTittle">5 кг</span>
+              <span class="promo-attrDesc">Вес палки</span>
+            </div>
+            <div class="promo-attribute">
+              <span class="promo-attrTittle">Карбон</span>
+              <span class="promo-attrDesc">Материал</span>
+            </div>
+
         </article>
 
         <!--Второй слайд-->
 
-        <article class="promo-content fitarmband-content">
+        <article class="promo-content">
           <img src="http://placehold.it/420x527" width="420" height="527" alt="Фитнесс браслет">
           <span class="promo-number">- 02</span>
-          <div class="promo-description fitarmband-description">
+          <div class="promo-description">
             <b>
               Худеем<br>
               правильно!
@@ -148,7 +145,7 @@
             </p>
           </div>
 
-            <a href="#" class="promo-details fitarmband-details">Подробнее</a>
+            <a href="#" class="promo-details">Подробнее</a>
 
             <div class="slider-control">
               <ul>
@@ -163,22 +160,19 @@
               </ul>
             </div>
 
-            <div class="promo-atributes fitarmband-atributes">
-              <ul>
-                <li>
-                  48 часов<br>
-                  <span class="item-atributes">без подзарядки</span>
-                </li>
-              </ul>
+            <div class="promo-attribute">
+              <span class="promo-attrTittle">48 часов</span>
+              <span class="promo-attrDesc">Без подзарядки</span>
             </div>
+
         </article>
 
         <!--Третий слайд-->
 
-        <article class="promo-content quadrocopter-content">
+        <article class="promo-content">
           <img src="http://placehold.it/526x334" width="526" height="334" alt="Квадрокоптер">
           <span class="promo-number">- 03</span>
-          <div class="promo-description quadrocopter-description">
+          <div class="promo-description">
             <b>
               Порхает как бабочка<br>
               жалит как пчела!
@@ -189,7 +183,7 @@
             </p>
           </div>
 
-            <a href="#" class="promo-details quadrocopter-details">Подробнее</a>
+            <a href="#" class="promo-details">Подробнее</a>
 
             <div class="slider-control">
               <ul>
@@ -204,84 +198,74 @@
               </ul>
             </div>
 
-            <div class="promo-atributes quadrocopter-atributes">
-              <ul>
-                <li>
-                  800 м<br>
-                  <span class="item-atributes">Дальность полета</span>
-                </li>
-                <li>
-                  50 м<br>
-                  <span class="item-atributes">Радиус поражения</span>
-                </li>
-              </ul>
+            <div class="promo-attribute">
+              <span class="promo-attrTittle">800 м</span>
+              <span class="promo-attrDesc">Дальность полета</span>
             </div>
+            <div class="promo-attribute">
+              <span class="promo-attrTittle">50 м</span>
+              <span class="promo-attrDesc">Радиус поражения</span>
+            </div>
+
         </article>
 
-        </div>
+      </section>
 
-        <!--Популярные товары-->
+      <!--Популярные товары-->
 
-        <div class="popular-items">
-          <ul>
-            <li>
+      <section class="popular-items">
+
               <a href=#>
                 <img src="http://placehold.it/160x160" width="160" height="160" alt="Виртуальная реальность">
                 <p>
                   Виртуальная реальность
                 </p>
               </a>
-            </li>
-            <li>
+
               <a href=#>
                 <img src="http://placehold.it/160x160" width="160" height="160" alt="Моноподы">
                 <p>
                   Моноподы для селфи
                 </p>
               </a>
-            </li>
-            <li>
+
               <a href=#>
                 <img src="http://placehold.it/160x160" width="160" height="160" alt="Экшн-камеры">
                 <p>
                   Экшн-камеры
                 </p>
               </a>
-            </li>
-            <li>
+
               <a href=#>
                 <img src="http://placehold.it/160x160" width="160" height="160" alt="Фитнесс браслеты">
                 <p>
                   Фитнесс браслеты
                 </p>
               </a>
-            </li>
-            <li>
+
               <a href=#>
                 <img src="http://placehold.it/160x160" width="160" height="160" alt="Умные часы">
                 <p>
                   Умные часы
                 </p>
               </a>
-            </li>
-            <li>
+
               <a href=#>
                 <img src="http://placehold.it/160x160" width="160" height="160" alt="Квадрокоптеры">
                 <p>
                   Квадрокоптеры
                 </p>
               </a>
-            </li>
-          </ul>
-        </div>
 
-        <!--Слайдер преимуществ-->
+        </section>
 
-        <div class="slider services">
+      <!--Слайдер предостовляемых сервисов-->
 
-          <!--Первый слайд-->
+      <section class="slider services">
 
-          <div class="slider-content delivery">
+        <!--Первый слайд-->
+
+        <div class="slider-content delivery">
 
             <div class="slider-menu">
               <ul>
@@ -297,7 +281,7 @@
               </ul>
             </div>
 
-            <section class="discription">
+            <section class="description">
               <h2>
                 Доставка
               </h2>
@@ -311,9 +295,9 @@
 
           </div>
 
-          <!--Второй слайд-->
+        <!--Второй слайд-->
 
-          <div class="slider-content warranty">
+        <div class="slider-content warranty">
 
               <div class="slider-menu">
                 <ul>
@@ -329,7 +313,7 @@
                 </ul>
               </div>
 
-              <section class="discription">
+              <section class="description">
                 <h2>
                   Гарантия
                 </h2>
@@ -343,9 +327,9 @@
 
             </div>
 
-          <!--Третий слайд-->
+        <!--Третий слайд-->
 
-          <div class="slider-content credit">
+        <div class="slider-content credit">
 
                 <div class="slider-menu">
                   <ul>
@@ -361,7 +345,7 @@
                   </ul>
                 </div>
 
-                <section class="discription">
+                <section class="description">
                   <h2>
                     Кредит
                   </h2>
@@ -375,38 +359,35 @@
 
               </div>
 
-        </div>
+      </section>
 
-        <!--Блок партнёров-->
+      <!--Блок партнёров-->
 
-        <div class="partners"> <!--Подозреваю что это ссылки, точно не знаю, но размечу их как ссылки-->
-          <ul>
-            <li>
+      <section class="partners"> <!--Подозреваю что это ссылки, точно не знаю, но размечу их как ссылки-->
+
               <a href="#">
                 <img src="http://placehold.it/260x100" width="260" height="100" alt="Логотип DJI">
               </a>
-            </li>
-            <li>
+
               <a href="#">
                 <img src="http://placehold.it/260x100" width="260" height="100" alt="Логотип SPGadgets">
               </a>
-            </li>
-            <li>
+
               <a href="#">
                 <img src="http://placehold.it/260x100" width="260" height="100" alt="Логотип GoPro">
               </a>
-            </li>
-            <li>
+
               <a href="#">
                 <img src="http://placehold.it/260x100" width="260" height="100" alt="Логотип VIVE">
               </a>
-            </li>
-          </ul>
-        </div>
 
-        <!--Блок "О нас"-->
+        </section>
 
-        <section class="about-us">
+      <section class="info">
+
+       <!--Блок "О нас"-->
+
+       <div class="info-block">
           <h2>
             О нас
           </h2>
@@ -431,11 +412,11 @@
           </ul>
 
           <a href="#">Подробнее о нас</a>
-        </section>
+        </div>
 
-        <!--Блок "Контакты"-->
+       <!--Блок "Контакты"-->
 
-        <section class="contacts">
+       <div class="info-block">
           <h2>
             Контакты
           </h2>
@@ -445,73 +426,83 @@
           </p>
           <a href="#" class="map"><img src="http://placehold.it/560x222" width="560" height="222" alt="Карта"></a>
           <a href="#" class="message-us">Напишите нам</a>
-        </section>
+        </div>
+
+      </section>
+
     </main>
 
         <!--Футер-->
 
     <footer class="main-footer">
       <div class="container">
-        <div class="logo">
-          <img src="http://placehold.it/280x80" width="280" height="80" alt="Логотип">
+        <div class="footer-line">
+
+          <div class="logo">
+            <img src="http://placehold.it/280x80" width="280" height="80" alt="Логотип">
+          </div>
+
+          <div class="user-block">
+            <a href="#" class="login">Войти</a>
+          </div>
+
+          <div class="user-options">
+            <ul>
+              <li>
+                <a href="#">Сравнить</a>
+              </li>
+              <li>
+                <a href="#">Корзина</a>
+              </li>
+            </ul>
+          </div>
+
         </div>
 
-        <div class="user-block">
-          <a href="#" class="login"><img src="http://placehold.it/20x20" width="20" height="20" alt="Логин">Войти</a>
-        </div>
+        <div class="footer-line">
 
-        <div class="user-options">
-          <ul>
-            <li>
-              <a href="#"><img src="http://placehold.it/20x20" width="20" height="20" alt="Сравнить">Сравнить</a>
-            </li>
-            <li>
-              <a href="#"><img src="http://placehold.it/20x20" width="20" height="20" alt="Корзина">Корзина</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class=footer-contacts>
-          <span class="adress">
+          <span class="address">
             г. Москва, ул. Строителей, 15
           </span>
+
           <span class="tel">
             Тел.: +7 (495) 495-95-95
           </span>
+
+          <div class="footer-services">
+            <ul>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">Гарантия</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+
         </div>
 
-        <div class="footer-services">
-          <ul>
-            <li>
-              <a href="#">Доставка</a>
-            </li>
-            <li>
-              <a href="#">Гарантия</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </div>
+        <div class="footer-line">
 
-        <div class="footee-strip">
-          <img src="http://placehold.it/80x7" width="80" height="7" alt="">
-        </div>
+          <div class="footer-strip">
+            <img src="http://placehold.it/80x7" width="80" height="7" alt="">
+          </div>
 
-        <div class="footer-social">
-          <a class="btn-social btn-social-fb" href="#">Фейсбук</a>
-          <a class="btn-social btn-social-inst" href="#">Инстаграм</a>
-          <a class="btn-social btn-social-twitter" href="#">Твиттер</a>
-        </div>
+          <div class="footer-social">
+            <a class="btn-social btn-social-fb" href="#">Фейсбук</a>
+            <a class="btn-social btn-social-inst" href="#">Инстаграм</a>
+            <a class="btn-social btn-social-twitter" href="#">Твиттер</a>
+          </div>
 
-        <div class="copyright">
-          <a href="#"><img src="http://placehold.it/80x7" width="27" height="34" alt="HTMLacademy лого"></a>
-        </div>
+          <div class="copyright">
+            <a href="#"><img src="http://placehold.it/80x7" width="27" height="34" alt="HTMLacademy лого"></a>
+          </div>
 
+        </div>
       </div>
     </footer>
-
-
-
   </body>
 </html>
