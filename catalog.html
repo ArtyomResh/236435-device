@@ -17,7 +17,7 @@
         </div>
 
         <div class="site-search">
-          <form>
+          <form action="#" method="get">
             <label for="search">
               <!--Здесь будет иконка из иконочного шрифта в виде лупы-->
             </label>
@@ -51,7 +51,7 @@
                   <a href="#">Виртуальная реальность</a>
                 </li>
                 <li>
-                  Моноподы для селфи
+                  <span class="current-page">Моноподы для селфи</span>
                 </li>
                 <li>
                   <a href="#">Экшн-камеры</a>
@@ -91,15 +91,74 @@
           <a href="#">Каталог товаров</a>
         </li>
         <li>
-          Моноподы для селфи
+          <span class="current-page">Моноподы для селфи</span>
         </li>
       </ul>
     </section>
 
     <main class="container">
 
-      <div class="catalog-filters">
+      <div class="catalog-filters"> <!--Вроде не такие больше элементы, что бы делать их <section>-->
+        <span>Фильтр</span> <!--хотел сначала заголовком сделать, но вроде это не очень подходит, а так же внизу две копки, с похожим оформлением, они то уже точно не заголовки-->
+        <form action="#" method="get">
 
+          <div class="catalog-filtersPrice">
+            <hr> <!--почему они расстягиваются на всю страницу а не ограничиваются блоком фильтров? Заменить <hr> на пустой <span> как в футере?-->
+            <label for="range">
+              <span class="filters-title">Стоимость</span>
+            </label>
+            <input type="range" id="range" min="0" max="10000" step="500" value="5000"> <!--не пойму как сделать два ползунка. Гуглил, люди пишут что это всё скрипты. Так?-->
+            <span>от 0</span>
+            <span>до 5000</span>
+          </div>
+
+          <div class="catalog-filtersColor">
+            <hr>
+             <span class="filters-title">Цвет</span>
+              <ul>
+                <li>
+                  <label>
+                    <input type="checkbox" name="black" checked>Черный
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="white">Белый
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="blue" checked>Cиний
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="red" checked>Красный
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="pink">Розовый
+                  </label>
+                </li>
+              </ul>
+         </div>
+
+         <div class="catalog-filtersBTopt"> <!--BTopt-Bluetooth option-->
+           <hr>
+           <span class="filters-title">Bluetooth</span>
+           <ul>
+             <li>
+               <input type="radio" name="BTopt" value="true">Есть
+             </li>
+             <li>
+               <input type="radio" name="BTopt" value="false">Нет
+             </li>
+         </div>
+
+         <button class="btn" type="submit">Показать</button>
+
+        </form>
       </div>
 
 
@@ -176,7 +235,6 @@
         <div class="footer-line">
 
           <span class="footer-strip">
-
           </span>
 
           <div class="footer-social">
