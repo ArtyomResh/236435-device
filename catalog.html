@@ -81,7 +81,7 @@
       </div>
     </header>
 
-    <section class=breadcrumbs>
+    <section class="breadcrumbs">
       <h1>Моноподы для селфи</h1>
       <ul>
         <li>
@@ -98,26 +98,26 @@
 
     <main>
 
-      <section class="catalog-blockLeft container"><!--блоки не выглядят как однотиные, поэтому два разных класса-->
+      <section class="catalog-block">
 
         <div class="catalog-filters"> <!--Вроде не такие больше элементы, что бы делать их <section>-->
-          <div class="catalog-filtersTitle"> <!--Заключил в блок, что бы можно было поменять цвет background'a-->
+          <div class="block-title"> <!--Заключил в блок, что бы можно было поменять цвет background'a-->
             <h2>Фильтр:</h2>
           </div>
           <form action="#" method="get">
 
             <div class="catalog-filtersPrice">
-              <hr> <!--почему они расстягиваются на всю страницу а не ограничиваются блоком фильтров? Заменить <hr> на пустой <span> как в футере?-->
+
               <label for="range">
                 <span class="filters-title">Стоимость</span>
               </label>
-              <input type="range" id="range" min="0" max="10000" step="500" value="5000"> <!--не пойму как сделать два ползунка. Гуглил, люди пишут что это всё скрипты. Так?-->
+              <input type="range" id="range" min="0" max="10000" step="500" value="5000">
               <span class="range-values">от 0</span>
               <span class="range-values">до 5000</span>
             </div>
 
             <div class="catalog-filtersColor">
-              <hr>
+
                <span class="filters-title">Цвет</span>
                 <ul>
                   <li>
@@ -149,7 +149,7 @@
            </div>
 
            <div class="catalog-filtersBTopt"> <!--BTopt-Bluetooth option-->
-             <hr>
+
              <span class="filters-title">Bluetooth</span>
              <ul>
                <li>
@@ -167,7 +167,7 @@
         </div>
       </section>
 
-      <section class="catalog-blockRight container">
+      <section class="catalog-block">
 
         <div class="catalog-sort">
           <h2>Сортировка:</h2>
@@ -197,7 +197,7 @@
                 500 руб.
               </span>
             </div>
-            <div class="item-options"> <!--и тут тоже будет замешана postion:absolute магия, да?-->
+            <div class="item-options">
               <a href="#" class="btn">В корзину</a>
               <a href="#" class="btn-itemCompare">Сравнить</a>
             </div>
@@ -352,4 +352,4 @@
     </footer>
 
   </body>
-</htmL>
+</html>
