@@ -96,92 +96,102 @@
       </ul>
     </section>
 
-    <main class="container">
+    <main class=>
 
-      <div class="catalog-filters"> <!--Вроде не такие больше элементы, что бы делать их <section>-->
-        <h2>Фильтр:<h2> <!--Всё же сделал заголовком =_=-->
-        <form action="#" method="get">
+      <section class="catalog-blockLeft container"><!--блоки не выглядят как однотиные, поэтому два разных класса-->
 
-          <div class="catalog-filtersPrice">
-            <hr> <!--почему они расстягиваются на всю страницу а не ограничиваются блоком фильтров? Заменить <hr> на пустой <span> как в футере?-->
-            <label for="range">
-              <span class="filters-title">Стоимость</span>
-            </label>
-            <input type="range" id="range" min="0" max="10000" step="500" value="5000"> <!--не пойму как сделать два ползунка. Гуглил, люди пишут что это всё скрипты. Так?-->
-            <span>от 0</span>
-            <span>до 5000</span>
-          </div>
+        <div class="catalog-filters"> <!--Вроде не такие больше элементы, что бы делать их <section>-->
+          <div class="catalog-filtersTitle"> <!--Заключил в блок, что бы можно было поменять цвет background'a-->
+            <h2>Фильтр:<h2>
+          </div> 
+          <form action="#" method="get">
 
-          <div class="catalog-filtersColor">
-            <hr>
-             <span class="filters-title">Цвет</span>
-              <ul>
-                <li>
-                  <label>
-                    <input type="checkbox" name="black" checked>Черный
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" name="white">Белый
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" name="blue" checked>Cиний
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" name="red" checked>Красный
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" name="pink">Розовый
-                  </label>
-                </li>
-              </ul>
-         </div>
+            <div class="catalog-filtersPrice">
+              <hr> <!--почему они расстягиваются на всю страницу а не ограничиваются блоком фильтров? Заменить <hr> на пустой <span> как в футере?-->
+              <label for="range">
+                <span class="filters-title">Стоимость</span>
+              </label>
+              <input type="range" id="range" min="0" max="10000" step="500" value="5000"> <!--не пойму как сделать два ползунка. Гуглил, люди пишут что это всё скрипты. Так?-->
+              <span class="range-values">от 0</span>
+              <span class="range-values">до 5000</span>
+            </div>
 
-         <div class="catalog-filtersBTopt"> <!--BTopt-Bluetooth option-->
-           <hr>
-           <span class="filters-title">Bluetooth</span>
-           <ul>
-             <li>
-               <input type="radio" name="BTopt" value="true">Есть
-             </li>
-             <li>
-               <input type="radio" name="BTopt" value="false">Нет
-             </li>
-         </div>
+            <div class="catalog-filtersColor">
+              <hr>
+               <span class="filters-title">Цвет</span>
+                <ul>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="black" checked>Черный
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="white">Белый
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="blue" checked>Cиний
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="red" checked>Красный
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="pink">Розовый
+                    </label>
+                  </li>
+                </ul>
+           </div>
 
-         <button class="btn" type="submit">Показать</button>
+           <div class="catalog-filtersBTopt"> <!--BTopt-Bluetooth option-->
+             <hr>
+             <span class="filters-title">Bluetooth</span>
+             <ul>
+               <li>
+                 <input type="radio" name="BTopt" value="true">Есть
+               </li>
+               <li>
+                 <input type="radio" name="BTopt" value="false">Нет
+               </li>
+           </div>
 
-        </form>
-      </div>
+           <button class="btn" type="submit">Показать</button>
 
-
-      <div class="catalog-sort">
-        <h2>Сортировка:</h2>
-        <span class="sort-option"><a href="#"></a>По цене</span>
-        <span class="sort-option"><a href="#"></a>По типу</span>
-        <span class="sort-option"><a href="#"></a>По популярности</span>
-        <div class="sort-order">
-          <span class="btn-sortOrder"><a href="#"></a></span>
-          <span class="btn-sortOrder"><a href="#"></a></span>
+          </form>
         </div>
-      </div>
+      </section>
+
+      <section class="catalog-blockRight container">
+
+        <div class="catalog-sort">
+          <h2>Сортировка:</h2>
+          <span class="sort-option"><a href="#"></a>По цене</span>
+          <span class="sort-option"><a href="#"></a>По типу</span>
+          <span class="sort-option"><a href="#"></a>По популярности</span>
+          <div class="sort-order">
+            <span class="btn-sortOrder"><a href="#"></a></span>
+            <span class="btn-sortOrder"><a href="#"></a></span>
+          </div>
+        </div>
 
 
-      <div class="catalog-items">
 
-      </div>
+        <div class="catalog-items">
+
+        </div>
 
 
-      <div class="catalog-nav">
+        <div class="catalog-nav">
 
-      </div>
+        </div>
+
+      </section>
+
     </main>
 
     <footer class="main-footer">
