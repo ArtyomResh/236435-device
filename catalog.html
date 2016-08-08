@@ -108,9 +108,12 @@
 
             <div class="catalog-filtersPrice">
 
-              <label for="range">
-                <span class="filters-title">Стоимость</span>
-              </label>
+              <span class="filters-title">
+                <label for="range">
+                  Стоимость
+                </label>
+              </span>
+
               <input type="range" id="range" min="0" max="10000" step="500" value="5000">
               <span class="range-values">от 0</span>
               <span class="range-values">до 5000</span>
@@ -121,28 +124,33 @@
                <span class="filters-title">Цвет</span>
                 <ul>
                   <li>
-                    <label>
-                      <input type="checkbox" name="black" checked>Черный
+                    <input type="checkbox" name="black" id="color-black" checked>
+                    <label for="color-black">
+                      Черный
                     </label>
                   </li>
                   <li>
-                    <label>
-                      <input type="checkbox" name="white">Белый
+                    <input type="checkbox" name="white" id="color-white">
+                    <label for="color-white">
+                      Белый
                     </label>
                   </li>
                   <li>
-                    <label>
-                      <input type="checkbox" name="blue" checked>Cиний
+                    <input type="checkbox" name="blue" id="color-blue" checked>
+                    <label for="color-blue">
+                      Cиний
                     </label>
                   </li>
                   <li>
-                    <label>
-                      <input type="checkbox" name="red" checked>Красный
+                    <input type="checkbox" name="red" id="color-red" checked>
+                    <label for="color-red">
+                      Красный
                     </label>
                   </li>
                   <li>
-                    <label>
-                      <input type="checkbox" name="pink">Розовый
+                    <input type="checkbox" name="pink" id="color-pink">
+                    <label for="color-pink">
+                      Розовый
                     </label>
                   </li>
                 </ul>
@@ -153,10 +161,16 @@
              <span class="filters-title">Bluetooth</span>
              <ul>
                <li>
-                 <input type="radio" name="BTopt" value="true">Есть
+                 <input type="radio" name="BTopt" id="BTopt-true" value="true">
+                 <label for="BTopt-true">
+                   Есть
+                 </label>
                </li>
                <li>
-                 <input type="radio" name="BTopt" value="false">Нет
+                 <input type="radio" name="BTopt" id="BTopt-false" value="false">
+                 <label for="BTopt-false">
+                   Нет
+                 </label>
                </li>
              </ul>
            </div>
