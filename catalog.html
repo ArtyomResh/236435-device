@@ -32,14 +32,8 @@
         </div>
 
         <div class="user-options">
-          <ul>
-            <li>
-              <a href="#" class="btn-user btn-userCompare">Сравнить</a>
-            </li>
-            <li>
-              <a href="#" class="btn-user btn-userCart">Корзина</a>
-            </li>
-          </ul>
+          <a href="#" class="btn-user btn-userCompare">Сравнить</a>
+          <a href="#" class="btn-user btn-userCart">Корзина</a>
         </div>
 
         <nav class="nav-main">
@@ -51,7 +45,7 @@
                   <a href="#">Виртуальная реальность</a>
                 </li>
                 <li>
-                  <span class="current-page">Моноподы для селфи</span>
+                  <a class="current-page">Моноподы для селфи</a>
                 </li>
                 <li>
                   <a href="#">Экшн-камеры</a>
@@ -91,7 +85,7 @@
           <a href="#">Каталог товаров</a>
         </li>
         <li>
-          <span class="current-page">Моноподы для селфи</span>
+          <a class="current-page">Моноподы для селфи</a>
         </li>
       </ul>
     </section>
@@ -100,28 +94,24 @@
 
       <section class="catalog-block">
 
-        <div class="catalog-filters"> <!--Вроде не такие больше элементы, что бы делать их <section>-->
           <div class="block-title"> <!--Заключил в блок, что бы можно было поменять цвет background'a-->
             <h2>Фильтр:</h2>
           </div>
-          <form action="#" method="get">
 
-            <div class="catalog-filtersPrice">
+          <form action="#" class="catalog-filters" method="get">
 
-              <span class="filters-title">
+              <h3 class="filter-title">
                 <label for="range">
                   Стоимость
                 </label>
-              </span>
+              </h3>
 
               <input type="range" id="range" min="0" max="10000" step="500" value="5000">
               <span class="range-values">от 0</span>
               <span class="range-values">до 5000</span>
-            </div>
 
-            <div class="catalog-filtersColor">
 
-               <span class="filters-title">Цвет</span>
+              <h3 class="filter-title">Цвет</h3>
                 <ul>
                   <li>
                     <input type="checkbox" name="black" id="color-black" checked>
@@ -154,14 +144,11 @@
                     </label>
                   </li>
                 </ul>
-           </div>
 
-           <div class="catalog-filtersBTopt"> <!--BTopt-Bluetooth option-->
-
-             <span class="filters-title">Bluetooth</span>
+             <h3 class="filter-title">Bluetooth</h3>
              <ul>
                <li>
-                 <input type="radio" name="BTopt" id="BTopt-true" value="true">
+                 <input type="radio" name="BTopt" id="BTopt-true" value="true" checked> <!--BTopt-Bluetooth option-->
                  <label for="BTopt-true">
                    Есть
                  </label>
@@ -173,12 +160,9 @@
                  </label>
                </li>
              </ul>
-           </div>
 
-           <button class="btn" type="submit">Показать</button>
-
+             <button class="btn" type="submit">Показать</button>
           </form>
-        </div>
       </section>
 
       <section class="catalog-block">
@@ -283,7 +267,7 @@
               <a href="#" class="btn-сatalogNav btn-catalogNavPrev">Назад</a>
             </li>
             <li>
-              <a href="#" class="current-page">1</a>
+              <a class="current-page">1</a>
             </li>
             <li>
               <a href="#">2</a>
@@ -318,14 +302,8 @@
           </div>
 
           <div class="user-options">
-            <ul>
-              <li>
-                <a href="#" class="btn-user btn-userCompare">Сравнить</a>
-              </li>
-              <li>
-                <a href="#" class="btn-user btn-userCart">Корзина</a>
-              </li>
-            </ul>
+            <a href="#" class="btn-user btn-userCompare">Сравнить</a>
+            <a href="#" class="btn-user btn-userCart">Корзина</a>
           </div>
 
         </div>
@@ -337,17 +315,9 @@
           </span>
 
           <div class="footer-links">
-            <ul>
-              <li>
-                <a href="#" class="btn-nav">Доставка</a>
-              </li>
-              <li>
-                <a href="#" class="btn-nav">Гарантия</a>
-              </li>
-              <li>
-                <a href="#" class="btn-nav">Контакты</a>
-              </li>
-            </ul>
+            <a href="#" class="btn-nav">Доставка</a>
+            <a href="#" class="btn-nav">Гарантия</a>
+            <a href="#" class="btn-nav">Контакты</a>
           </div>
 
           <span class="tel">

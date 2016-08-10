@@ -30,14 +30,8 @@
         </div>
 
         <div class="user-options">
-          <ul>
-            <li>
-              <a href="#" class="btn-user btn-userCompare">Сравнить</a>
-            </li>
-            <li>
-              <a href="#" class="btn-user btn-userCart">Корзина</a>
-            </li>
-          </ul>
+          <a href="#" class="btn-user btn-userCompare">Сравнить</a>
+          <a href="#" class="btn-user btn-userCart">Корзина</a>
         </div>
 
         <nav class="nav-main"> <!--Логичней же так,да?-->
@@ -87,10 +81,11 @@
 
         <!--Первый слайд-->
 
-        <article class="promo-content">
-          <img src="http://placehold.it/420x527" width="420" height="527" alt="Селфи палка">
-          <span class="promo-number"></span>
-          <div class="promo-description">
+        <article class="promo-slide">
+          <div class="promo-image">
+            <img src="http://placehold.it/420x527" width="420" height="527" alt="Селфи палка">
+          </div>
+          <div class="promo-content">
             <b>
               Делай селфи,<br>
               как Бен Стиллер!
@@ -105,7 +100,8 @@
 
             <div class="slider-control">
               <ul>
-                <li class="active">
+                <li>
+                  <a class="active"></a>
                 </li>
                 <li>
                   <a href="#"></a>
@@ -133,10 +129,11 @@
 
         <!--Второй слайд-->
 
-        <article class="promo-content">
-          <img src="http://placehold.it/420x527" width="420" height="527" alt="Фитнесс браслет">
-          <span class="promo-number"></span>
-          <div class="promo-description">
+        <article class="promo-slide">
+          <div class="promo-image">
+            <img src="http://placehold.it/420x527" width="420" height="527" alt="Фитнесс браслет">
+          </div>
+          <div class="promo-content">
             <b>
               Худеем<br>
               правильно!
@@ -154,7 +151,8 @@
                 <li>
                   <a href="#"></a>
                 </li>
-                <li class="active">
+                <li>
+                  <a class="active"></a>
                 </li>
                 <li>
                   <a href="#"></a>
@@ -171,10 +169,11 @@
 
         <!--Третий слайд-->
 
-        <article class="promo-content">
-          <img src="http://placehold.it/526x334" width="526" height="334" alt="Квадрокоптер">
-          <span class="promo-number"></span>
-          <div class="promo-description">
+        <article class="promo-slide">
+          <div class="promo-image">
+            <img src="http://placehold.it/526x334" width="526" height="334" alt="Квадрокоптер">
+          </div>
+          <div class="promo-content">
             <b>
               Порхает как бабочка<br>
               жалит как пчела!
@@ -195,7 +194,8 @@
                 <li>
                   <a href="#"></a>
                 </li>
-                <li class="active">
+                <li>
+                  <a class="active"></a>
                 </li>
               </ul>
             </div>
@@ -217,42 +217,42 @@
 
       <section class="popular-items">
 
-              <a href=# class="btn-popular">
+              <a href="#" class="btn-popular">
                 <img src="http://placehold.it/160x160" width="160" height="160" alt="Виртуальная реальность">
                 <p>
                   Виртуальная реальность
                 </p>
               </a>
 
-              <a href=# class="btn-popular">
+              <a href="#" class="btn-popular">
                 <img src="http://placehold.it/160x160" width="160" height="160" alt="Моноподы">
                 <p>
                   Моноподы для селфи
                 </p>
               </a>
 
-              <a href=# class="btn-popular">
+              <a href="#" class="btn-popular">
                 <img src="http://placehold.it/160x160" width="160" height="160" alt="Экшн-камеры">
                 <p>
                   Экшн-камеры
                 </p>
               </a>
 
-              <a href=# class="btn-popular">
+              <a href="#" class="btn-popular">
                 <img src="http://placehold.it/160x160" width="160" height="160" alt="Фитнесс браслеты">
                 <p>
                   Фитнесс браслеты
                 </p>
               </a>
 
-              <a href=# class="btn-popular">
+              <a href="#" class="btn-popular">
                 <img src="http://placehold.it/160x160" width="160" height="160" alt="Умные часы">
                 <p>
                   Умные часы
                 </p>
               </a>
 
-              <a href=# class="btn-popular">
+              <a href="#" class="btn-popular">
                 <img src="http://placehold.it/160x160" width="160" height="160" alt="Квадрокоптеры">
                 <p>
                   Квадрокоптеры
@@ -286,55 +286,40 @@
           <!--Первый слайд-->
 
           <div class="services-slide services-slideDelivery">
-
-            <section class="services-slideDesc"> <!--Desc-description-->
-              <h2>
-                Доставка
-              </h2>
-              <p>
-                Мы с удовольствием доставим ваш товар прямо к вашему
-                подъезду совершенно бесплатно! Ведь мы неплохо
-                заработаем, поднимая его на ваш этаж.
-              </p>
-              <img src="http://placehold.it/136x164" width="136" height="164" alt="Доставка">
-            </section>
-
+            <h2>
+              Доставка
+            </h2>
+            <p>
+              Мы с удовольствием доставим ваш товар прямо к вашему
+              подъезду совершенно бесплатно! Ведь мы неплохо
+              заработаем, поднимая его на ваш этаж.
+            </p>
           </div>
 
           <!--Второй слайд-->
 
           <div class="services-slide services-slideWarranty">
-
-                <section class="services-slideDesc">
-                  <h2>
-                    Гарантия
-                  </h2>
-                  <p>
-                    Если из-за возгарания купленного у нас товара у вас сгорит
-                    дом — не переживайте, мы выдадим вам новый.
-                    Товар, не дом, конечно же.
-                  </p>
-                  <img src="http://placehold.it/171x195" width="171" height="195" alt="Гарантия">
-                </section>
-
+            <h2>
+              Гарантия
+            </h2>
+            <p>
+              Если из-за возгарания купленного у нас товара у вас сгорит
+              дом — не переживайте, мы выдадим вам новый.
+              Товар, не дом, конечно же.
+            </p>
           </div>
 
           <!--Третий слайд-->
 
           <div class="services-slide services-slideCredit">
-
-                <section class="services-slideDesc">
-                  <h2>
-                    Кредит
-                  </h2>
-                  <p>
-                    Залезть в долговую яму стало проще! Кредитные
-                    консультанты подберут для вас наиболее выгодные
-                    условия кредита. Выгодные для нашего банка, разумеется.
-                  </p>
-                  <img src="http://placehold.it/156x188" width="156" height="188" alt="Кредит">
-                </section>
-
+            <h2>
+              Кредит
+            </h2>
+            <p>
+              Залезть в долговую яму стало проще! Кредитные
+              консультанты подберут для вас наиболее выгодные
+              условия кредита. Выгодные для нашего банка, разумеется.
+            </p>
           </div>
 
         </div>
@@ -429,14 +414,8 @@
           </div>
 
           <div class="user-options">
-            <ul>
-              <li>
-                <a href="#" class="btn-user btn-userCompare">Сравнить</a>
-              </li>
-              <li>
-                <a href="#" class="btn-user btn-userCart">Корзина</a>
-              </li>
-            </ul>
+            <a href="#" class="btn-user btn-userCompare">Сравнить</a>
+            <a href="#" class="btn-user btn-userCart">Корзина</a>
           </div>
 
         </div>
@@ -448,17 +427,9 @@
           </span>
 
           <div class="footer-links">
-            <ul>
-              <li>
-                <a href="#" class="btn-nav">Доставка</a>
-              </li>
-              <li>
-                <a href="#" class="btn-nav">Гарантия</a>
-              </li>
-              <li>
-                <a href="#" class="btn-nav">Контакты</a>
-              </li>
-            </ul>
+            <a href="#" class="btn-nav">Доставка</a>
+            <a href="#" class="btn-nav">Гарантия</a>
+            <a href="#" class="btn-nav">Контакты</a>
           </div>
 
           <span class="tel">
