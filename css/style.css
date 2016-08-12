@@ -1,0 +1,30 @@
+body,
+.sub-menu a {  /*Не пойму почему эти стиле не действуют на .sub-menu*/
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+  letter-spacing: auto;
+}
+
+h1,
+h2,
+b {
+  font-family: "Gilroy", sans-serif;
+  font-weight: bolder; /*В PSD написано extrabold, но здесь это значение не работает, правильно ли я понимаю что extrabold=bolder?*/
+  font-size: 47px;
+  color: #000000;
+}
+
+nav,
+.btn,
+.btn-nav {
+  font-family: "Gilroy", sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
