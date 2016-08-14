@@ -1,0 +1,32 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  color: #464646;
+}
+
+h1,
+h2,
+.promo-content b, /*Ты имел ввиду убрать просто <b> и задать стиль каскадированием или изменить в коде <b> на <span>?*/
+.nav-main,
+.btn,
+.btn-nav {
+  font-family: "Gilroy", sans-serif;
+  font-weight: bolder;
+  color: #000000;
+}
+
+h1,
+h2
+.promo-content b {
+  font-size: 47px;
+}
+
+.nav-main a,
+.btn,
+.btn-nav {
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
