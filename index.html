@@ -5,72 +5,77 @@
     <title>HTML Academy: Девайс</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="body-index">
 
     <!--Хедер-->
 
     <header class="main-header">
       <div class="container">
-        <span class="logo">
+
+        <div class="logo">
           DEVICE
-        </span>
+        </div>
+        <div class="header-line">
+          <div class="site-search">
+            <form action="#" method="get">
+              <label for="search">
+                <!--Здесь будет иконка из иконочного шрифта в виде лупы-->
+              </label>
+              <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+              <a href="#" class="btn-search">Найти</a>
+            </form>
+          </div>
 
-        <div class="site-search">
-          <form action="#" method="get">
-            <label for="search">
-              <!--Здесь будет иконка из иконочного шрифта в виде лупы-->
-            </label>
-            <input type="search" name="search" id="search" placeholder="Поиск по сайту">
-          </form>
+          <div class="user-block">
+            <a href="#" class="btn-user btn-userName">Валентин Петухов</a>
+            <a href="#" class="btn-user btn-userLogin">Войти</a>
+            <a href="#" class="btn-user btn-userLogout">Выйти</a>
+          </div>
+
+          <div class="user-options">
+            <a href="#" class="btn-user btn-userCompare">Сравнить</a>
+            <a href="#" class="btn-user btn-userCart">Корзина</a>
+          </div>
         </div>
 
-        <div class="user-block">
-          <a href="#" class="btn-user btn-userName">Валентин Петухов</a>
-          <a href="#" class="btn-user btn-userLogin">Войти</a>
-          <a href="#" class="btn-user btn-userLogout">Выйти</a>
+        <div class="header-line">
+          <nav class="nav-main"> <!--Логичней же так,да?-->
+            <!-- <ul>
+              <li>
+                <a href="#">Каталог товаров</a><button type="button" class="sub-menuOpener">+</button>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#">Виртуальная реальность</a>
+                  </li>
+                  <li>
+                    <a href="#">Моноподы для селфи</a>
+                  </li>
+                  <li>
+                    <a href="#">Экшн-камеры</a>
+                  </li>
+                  <li>
+                    <a href="#">Фитнесс-браслеты</a>
+                  </li>
+                  <li>
+                    <a href="#">Умные часы</a>
+                  </li>
+                  <li>
+                    <a href="#">Квадрокоптеры</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">Гарантия</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul> -->
+          </nav>
         </div>
-
-        <div class="user-options">
-          <a href="#" class="btn-user btn-userCompare">Сравнить</a>
-          <a href="#" class="btn-user btn-userCart">Корзина</a>
-        </div>
-
-        <nav class="nav-main"> <!--Логичней же так,да?-->
-          <ul>
-            <li>
-              <a href="#">Каталог товаров</a><button type="button" class="sub-menuOpener">+</button>
-              <ul class="sub-menu">
-                <li>
-                  <a href="#">Виртуальная реальность</a>
-                </li>
-                <li>
-                  <a href="#">Моноподы для селфи</a>
-                </li>
-                <li>
-                  <a href="#">Экшн-камеры</a>
-                </li>
-                <li>
-                  <a href="#">Фитнесс-браслеты</a>
-                </li>
-                <li>
-                  <a href="#">Умные часы</a>
-                </li>
-                <li>
-                  <a href="#">Квадрокоптеры</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Доставка</a>
-            </li>
-            <li>
-              <a href="#">Гарантия</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
 
@@ -402,9 +407,9 @@
       <div class="container">
         <div class="footer-line">
 
-          <span class="logo">
+          <div class="logo">
             DEVICE
-          </span>
+          </div>
 
           <div class="user-block">
             <a href="#" class="btn-user btn-userName">Валентин Петухов</a>

@@ -1,13 +1,15 @@
-body {
+body,
+.nav-main li li a {
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 15px;
   color: #464646;
+
 }
 
 h1,
 h2,
-.promo-content b, /*Ты имел ввиду убрать просто <b> и задать стиль каскадированием или изменить в коде <b> на <span>?*/
+.promo-content b,
 .nav-main,
 .btn,
 .btn-nav {
@@ -17,16 +19,383 @@ h2,
 }
 
 h1,
-h2
+h2,
 .promo-content b {
   font-size: 47px;
 }
 
-.nav-main a,
+.nav-main li a,
 .btn,
 .btn-nav {
   font-size: 18px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
+  color: #000000;
+}
+
+/*НИЖЕ ВСЁ ЧТО КАСАЕТСЯ СЕТОК*/
+
+.body-catalog {
+  background: url("../img/device-catalog.jpg") no-repeat 50% 3px #ffffff; /*Только для создания сетки*/
+}
+
+.body-index {
+  background: url("../img/device-index.jpg") no-repeat 50% 3px #ffffff; /*Только для создания сетки*/
+}
+
+/*ОБЩИЕ СТИЛИ*/
+
+.main-header {
+  padding-top: 18px;
+  min-height: 203px; /*Только для создания сетки*/
+  background-color: rgba(255, 0, 0, 0.1);
+  margin-bottom: 37px;
+}
+
+.logo {
+  margin-bottom: 15px;
+  width: 163px;
+  height: 36px;
+  background-color: rgba(255, 255, 0, 0.3);
+}
+
+.site-search {
+  float: left;
+  width: 440px;
+  min-height: 20px; /*Только для создания сетки*/
+  background-color: rgba(255, 255, 0, 0.3);
+}
+
+.user-block {
+  float: left;
+  margin-left: 100px;
+  width: 260px;
+  min-height: 20px; /*Только для создания сетки*/
+  background-color: rgba(255, 255, 0, 0.3);
+}
+
+.user-options {
+  float: right;
+  width: 280px;
+  min-height: 20px; /*Только для создания сетки*/
+  background-color: rgba(255, 255, 0, 0.3);
+}
+
+.user-line {
+  padding-top: 15px; /*Из-за кнопки из Styleguide.psd*/
+  margin-bottom: 45px;
+  background-color: rgba(255, 100, 200, 0.3);
+}
+
+.main-footer {
+  min-height: 323px;
+  padding-top: 60px;
+  background-color: rgba(100, 100, 100, 0.3);
+}
+
+.main-footer .container {
+  padding-left:0;
+  width: 1160px;
+}
+
+.footer-line {
+  min-height: 40px; /*Только для создания сетки*/
+  margin-bottom: 35px;
+  background-color: rgba(255, 100, 200, 0.3);
+}
+
+.main-footer .logo {
+  float:left;
+  margin-bottom: 0;
+}
+
+.main-footer .user-block,
+.main-footer .user-options {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.main-footer .user-options {
+  width: 220px;
+  margin-left: 20px;
+}
+
+.main-footer .user-block {
+  width: 350px;
+  margin-left: 400px;
+}
+
+.main-footer .address {
+  float:left;
+  width: 260px;
+  min-height: 20px; /*Только для создания сетки*/
+  margin-right: 40px;
+  background-color: rgba(255, 255, 0, 0.3);
+}
+
+.footer-links {
+  float:left;
+  width: 600px;
+  min-height: 20px; /*Только для создания сетки*/
+  background-color: rgba(255, 255, 0, 0.3);
+}
+
+.main-footer .tel{
+  float: right;
+  width: 200px;
+  min-height: 20px; /*Только для создания сетки*/
+  background-color: rgba(255, 255, 0, 0.3);
+}
+
+.footer-line:last-child {
+  margin-top: 45px;
+  margin-bottom: 0px;
+}
+
+.footer-strip {
+  float:left;
+  width: 80px;
+  min-height: 40px; /*Только для создания сетки*/
+  margin-right: 280px;
+  background-color: rgba(255, 255, 0, 0.3);
+}
+
+.footer-social {
+  float: left;
+  width: 440px;
+  min-height: 40px; /*Только для создания сетки*/
+  background-color: rgba(255, 255, 0, 0.3);
+}
+
+.copyright {
+  float: right;
+  width: 60px;
+  min-height: 40px; /*Только для создания сетки*/
+  background-color: rgba(255, 255, 0, 0.3);
+}
+/*МЕНЮ ОСНОВНОЙ НАВИГАЦИИ*/
+
+.nav-line {
+  min-height: 25px;
+  background-color: rgba(255, 100, 200, 0.3)
+}
+
+.nav-main ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.nav-main > ul > li {
+  margin: -1px;
+  display: inline-block;
+}
+
+.nav-main > ul > li:nth-child(1) {
+  margin-right: 15px;
+}
+
+.nav-main > ul > li:nth-child(2) {
+  margin-right: 290px;
+}
+
+.nav-main > ul > li:nth-child(3) {
+  margin-right: 35px;
+}
+
+.nav-main > ul > li:nth-child(4) {
+  margin-right: 110px;
+}
+
+.nav-main li li {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+}
+
+.nav-main li li ul {
+  margin:0;
+  padding:0;
+}
+
+.nav-main li li li a {
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 36px;
+}
+
+li.column-1 {
+  width: 220px;
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+li.column-2,
+li.column-3 {
+  width: 180px;
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+.nav-main .sub-menu {
+  position: absolute;
+  z-index: 100;
+  width: 1100px;
+  min-height: 142px;
+  padding: 0;
+  padding-left: 60px;
+  margin: 0;
+  margin-left: -60px;
+  top: 43px;
+  left: 0;
+  background-color: #f7e296;
+}
+
+/*ШВЕЙЦАР (xD) .SUB-MENU*/
+
+.nav-main > ul > li input[type=checkbox]:checked ~ .sub-menu {
+  display: block;
+}
+
+.nav-main > ul > li input[type=checkbox]:checked + label .fa-plus {
+  display: none;
+}
+
+.nav-main > ul > li input[type=checkbox] + label .fa-plus {
+  display: block;
+}
+
+.nav-main > ul > li input[type=checkbox]:checked + label .fa-minus {
+  display: block;
+}
+
+.nav-main > ul > li input[type=checkbox] + label .fa-minus {
+  display: none;
+}
+
+/*.sub-menuToggles .fa {
+  color: rgba(211, 211, 211, 0.6);
+} плохо видно цвет */
+
+.sub-menuToggles:hover {
+  cursor: pointer;
+}
+
+#sub-menuPorter {
+  display:none;
+}
+
+/*СТИЛИ ДЛЯ CATALOG.HTML*/
+
+.catalog {
+  width:1440px;
+  margin: 0 auto;
+}
+
+.breadcrumbs {
+  margin-bottom: 47px;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.breadcrumbs .container {
+  min-height: 95px; /*Только для создания сетки*/
+}
+
+.catalog-block {
+  min-height: 1283px;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.catalog-block:first-child {
+  float: left;
+  background-color: rgba(0, 255, 0, 0.3);
+  width: 468px;
+}
+
+.catalog-block:last-child {
+  margin-left:468px;
+  width: 972px;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.block-title {
+  min-height: 70px; /*Только для создания сетки*/
+  padding-left: 200px;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.catalog-filters {
+  min-height: 740px; /*Только для создания сетки*/
+  padding-left: 200px;
+  padding-top: 70px;
+  background-color: rgba(0, 0, 255, 0.3);
+}
+
+.catalog-sort {
+  width:900px;
+  height: 70px; /*Только для создания сетки*/
+  padding-left: 72px;
+  background-color: rgba(0, 0, 255, 0.4);
+}
+
+.sort-options {
+  float: left;
+  width: 660px;
+  min-height: 70px; /*Только для создания сетки*/
+  margin-right: 40px;
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+.sort-order {
+  float:left;
+  width: 60px;
+  min-height: 70px; /*Только для создания сетки*/
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+.catalog-items {
+  padding-top: 60px;
+  padding-left: 72px;
+  font-size: 0;
+  line-height: 0;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.item {
+  display: inline-block;
+  min-height: 486px;
+  width: 360px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  background-color: rgba(0, 115, 115, 0.5);
+}
+
+.catalog-nav {
+  min-height: 70px;
+  width: 760px;
+  margin-left: 72px;
+  background-color: rgba(0, 115, 115, 0.5);
+}
+
+/*СТИЛИ ДЛЯ INDEX.HTML*/
+
+/*ВСПОМОГАТЕЛЬНЫЕ СТИЛИ*/
+
+
+.hidden {
+  display: none;
+}
+
+.container {
+  padding-left: 60px;
+  margin: 0 auto;
+  width: 1100px;
+  background-color: rgba(0, 255, 255, 0.6);
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
