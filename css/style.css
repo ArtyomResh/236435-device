@@ -47,17 +47,21 @@ h2,
 /*ОБЩИЕ СТИЛИ*/
 
 .main-header {
-  padding-top: 18px;
-  min-height: 203px; /*Только для создания сетки*/
+  margin-top: 43px; /*18px;*/
+  min-height: 186px; /*Только для создания сетки*/
   background-color: rgba(255, 0, 0, 0.1);
   margin-bottom: 37px;
 }
 
 .logo {
-  margin-bottom: 15px;
   width: 163px;
   height: 36px;
   background-color: rgba(255, 255, 0, 0.3);
+}
+
+.main-header .logo {
+  position: relative;
+  top: -20px;
 }
 
 .site-search {
@@ -89,14 +93,9 @@ h2,
 }
 
 .main-footer {
-  min-height: 323px;
+  min-height: 263px;
   padding-top: 60px;
   background-color: rgba(100, 100, 100, 0.3);
-}
-
-.main-footer .container {
-  padding-left:0;
-  width: 1160px;
 }
 
 .footer-line {
@@ -171,7 +170,7 @@ h2,
 .copyright {
   float: right;
   width: 60px;
-  min-height: 40px; /*Только для создания сетки*/
+  min-height: 20px; /*Только для создания сетки*/
   background-color: rgba(255, 255, 0, 0.3);
 }
 /*МЕНЮ ОСНОВНОЙ НАВИГАЦИИ*/
@@ -274,9 +273,9 @@ li.column-3 {
   display: none;
 }
 
-/*.sub-menuToggles .fa {
-  color: rgba(211, 211, 211, 0.6);
-} плохо видно цвет */
+.sub-menuToggles .fa {
+  color: rgba(0, 0, 0, 0.5);
+}
 
 .sub-menuToggles:hover {
   cursor: pointer;
@@ -380,6 +379,155 @@ li.column-3 {
 
 /*СТИЛИ ДЛЯ INDEX.HTML*/
 
+.main-header.index-header {
+  min-height: 300px;
+  margin-bottom: 0;
+}
+
+.slider.promo {
+  margin-top: -112px;
+  margin-bottom: 106px;
+  background-color: rgba(0, 0, 255, 0.3);
+}
+
+.promo-image {
+  float: left;
+  width: 560px;
+  min-height: 487px; /*Только для создания сетки*/
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.promo-content {
+  text-align: left;
+  font-size: 0;
+  float: right;
+  width: 560px;
+  min-height: 487px; /*Только для создания сетки*/
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.slider-options {
+  margin-top: 322px; /*Только для создания сетки*/
+  margin-bottom: 60px;
+}
+
+.promo-details {
+  float: left;
+  padding-left: 42px;
+  min-height: 25px; /*Только для создания сетки*/
+  width: 220px;
+  background-color: rgba(0, 255, 0, 0.3);
+}
+
+.slider-control {
+  float:right;
+  min-width: 120px;
+  min-height: 25px; /*Только для создания сетки*/
+  margin-right: 60px;
+  background-color: rgba(0, 255, 0, 0.3);
+}
+
+.promo-attribute {
+  display: inline-block;
+  min-height: 78px; /*Только для создания сетки*/
+  width: 160px;
+  background-color: rgba(0, 255, 0, 0.3);
+}
+
+.promo-attribute:nth-child(2) {
+  width: 140px;
+}
+
+.popular-items .btn-popular {
+  display:inline-block;
+  height: 160px;
+  width: 160px;
+  vertical-align: top;
+  font-size: 18px;
+  text-decoration: none;
+  background-color: rgba(0, 255, 0, 0.3);
+}
+
+.popular-items {
+  font-size: 0;
+  text-align: center;
+  vertical-align: bottom;
+  line-height: 160px;
+  background-color: rgba(255, 0, 0, 0.3);
+  margin-bottom: 262px;
+}
+
+.btn-popular + .btn-popular {
+  margin-left: 40px;
+}
+
+.btn-popular img {
+  vertical-align: middle;
+}
+
+.btn-popular:nth-of-type(2) img {
+  vertical-align: bottom;;
+}
+
+.btn-popular p {
+  text-align: left;
+  vertical-align: top;
+  line-height: normal;
+  margin-top: 30px;
+}
+
+.slider.services {
+  min-height: 288px; /*Только для создания сетки*/
+  margin-bottom: 95px;
+  background-color: rgba(0, 255, 0, 0.3);
+}
+
+.services-menu {
+  float: left;
+  width: 300px;
+  margin-top: -20px;
+  min-height: 170px;/*Только для создания сетки*/
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.services-slides {
+  float: right;
+  width: 760px;
+  margin-top: -20px;
+  min-height: 170px;/*Только для создания сетки*/
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.partners {
+  text-align:center;
+  font-size: 0;
+  line-height: 0;
+  margin-bottom: 90px;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.btn-partner {
+  display: inline-block;
+}
+
+.btn-partner + .btn-partner {
+  margin-left: 40px;
+}
+.info {
+  margin-bottom: 85px;
+}
+.info-block {
+  float:left;
+  width: 560px;
+  min-height: 570px;
+  margin-right: 40px;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.info-block:last-child {
+  margin-right: 0px
+}
+
 /*ВСПОМОГАТЕЛЬНЫЕ СТИЛИ*/
 
 
@@ -391,6 +539,12 @@ li.column-3 {
   padding-left: 60px;
   margin: 0 auto;
   width: 1100px;
+  background-color: rgba(0, 255, 255, 0.6);
+}
+
+.container-WP { /*WP-wihtout-padding*/
+  margin: 0 auto;
+  width: 1160px;
   background-color: rgba(0, 255, 255, 0.6);
 }
 
