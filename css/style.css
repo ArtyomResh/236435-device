@@ -1,20 +1,52 @@
-body,
-.nav-main li li a {
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  color: #464646;
+@font-face {
+    font-family: "Gilroy Extra Bold";
+    src: url("../fonts/gilroy/gilroyextrabold.woff2") format("woff2"),
+         url("../fonts/gilroy/gilroyextrabold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: "Gilroy Light";
+    src: url("../fonts/gilroy/gilroylight.woff2") format("woff2"),
+         url("../fonts/gilroy/gilroylight.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/open_sans/opensans.woff2") format("woff2"),
+         url("../fonts/open_sans/opensans.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans Light";
+    src: url("../fonts/open_sans/opensanslight.woff2") format("woff2"),
+         url("../fonts/open_sans/opensanslight.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  min-width: 1240px;
+
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 15px;
+
+  color: #464646;
 }
 
 h1,
 h2,
 .promo-content b,
-.nav-main,
+.nav-main li a,
 .btn,
-.btn-nav {
-  font-family: "Gilroy", sans-serif;
-  font-weight: bolder;
+.btn-nav,
+.logo {
+  font-family: "Gilroy Extra Bold", "Arial Black", sans-serif;
   color: #000000;
 }
 
@@ -34,63 +66,214 @@ h2,
   color: #000000;
 }
 
+.nav-main li li a {
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  color: #000000;
+}
+
 /*НИЖЕ ВСЁ ЧТО КАСАЕТСЯ СЕТОК*/
-
-.body-catalog {
-  background: url("../img/device-catalog.jpg") no-repeat 50% 3px #ffffff; /*Только для создания сетки*/
-}
-
-.body-index {
-  background: url("../img/device-index.jpg") no-repeat 50% 3px #ffffff; /*Только для создания сетки*/
-}
 
 /*ОБЩИЕ СТИЛИ*/
 
+/*HEADER*/
+
 .main-header {
-  margin-top: 43px; /*18px;*/
-  min-height: 186px; /*Только для создания сетки*/
-  background-color: rgba(255, 0, 0, 0.1);
+  margin-top: 43px;
   margin-bottom: 37px;
 }
 
 .logo {
-  width: 163px;
-  height: 36px;
-  background-color: rgba(255, 255, 0, 0.3);
+  font-size: 48px;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
 }
 
 .main-header .logo {
   position: relative;
   top: -20px;
+  left: -3px;
+}
+
+.user-line a {
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  text-decoration: none;
+  color: #000000;
 }
 
 .site-search {
+  position: relative;
+
   float: left;
   width: 440px;
-  min-height: 20px; /*Только для создания сетки*/
-  background-color: rgba(255, 255, 0, 0.3);
+}
+
+.site-search label {
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translate(0, -50%);
+
+  width: 16px;
+  height: 16px;
+
+  background: url("../img/sprite.png") no-repeat -355px -5px;
+}
+
+#search {
+  width: 290px;
+  margin-left: 40px;
+
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+
+  background-color: transparent;
+  border: none;
+  opacity: 0.3;
+
+  outline: none;
+}
+
+#search:hover {
+  opacity: 0.6;
+}
+
+#search:focus {
+  opacity: 1;
+}
+
+#search:focus ~ .btn-search,
+#search:focus ~ .btn-search::before {
+  display: block;
+}
+
+.site-search .btn-search {
+  position: absolute;
+  right: 0;
+  top: -5px;
+
+  display: none;
+  width: 80px;
+  height: 46px;
+
+  text-align: center;
+  line-height: 46px;
+
+  border: 2px solid #000000;
+}
+
+.btn-search::before {
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+
+  display:none;
+  width: 440px;
+
+  border-bottom: 2px solid #000000;
+
+  content: "";
+}
+
+.btn-search:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.btn-search:active {
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .user-block {
   float: left;
-  margin-left: 100px;
   width: 260px;
-  min-height: 20px; /*Только для создания сетки*/
-  background-color: rgba(255, 255, 0, 0.3);
+  margin-left: 100px;
+}
+
+.btn-user {
+  position: relative;
+
+  display: inline-block;
+}
+
+.btn-user::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+
+  background: url("../img/sprite.png") no-repeat;
+
+  content:"";
+}
+
+.btn-user:hover {
+  opacity: 0.6;
+}
+
+.btn-user:active {
+  opacity: 0.3;
+}
+
+.btn-userLogin,
+.btn-userName {
+  padding-left: 27px;
+}
+
+.btn-userLogin.btn-user::before,
+.btn-userName.btn-user::before {
+  width: 13px;
+  height: 12px;
+
+  background-position: -429px -5px;
 }
 
 .user-options {
   float: right;
   width: 280px;
-  min-height: 20px; /*Только для создания сетки*/
-  background-color: rgba(255, 255, 0, 0.3);
+}
+
+.btn-userCompare {
+  width: 73px;
+  margin-right: 17px;
+  padding-left: 27px;
+}
+
+.btn-userCart {
+  width: 60px;
+  padding-left: 40px;
+}
+
+.btn-userCompare.btn-user::before {
+  left: 7px;
+
+  width: 10px;
+  height: 10px;
+
+  background-position: -71px -5px;
+}
+
+.btn-userCart.btn-user::before {
+  left: 17px;
+
+  width: 12px;
+  height: 12px;
+
+  background-position: -5px -5px;
 }
 
 .user-line {
-  padding-top: 15px; /*Из-за кнопки из Styleguide.psd*/
-  margin-bottom: 45px;
-  background-color: rgba(255, 100, 200, 0.3);
+  margin-bottom: 35px;
+
+  vertical-align: top;
 }
+
+/*FOOTER*/
 
 .main-footer {
   min-height: 263px;
@@ -173,12 +356,8 @@ h2,
   min-height: 20px; /*Только для создания сетки*/
   background-color: rgba(255, 255, 0, 0.3);
 }
-/*МЕНЮ ОСНОВНОЙ НАВИГАЦИИ*/
 
-.nav-line {
-  min-height: 25px;
-  background-color: rgba(255, 100, 200, 0.3)
-}
+/*МЕНЮ ОСНОВНОЙ НАВИГАЦИИ*/
 
 .nav-main ul {
   position: relative;
@@ -189,24 +368,31 @@ h2,
 }
 
 .nav-main > ul > li {
-  margin: -1px;
   display: inline-block;
 }
 
 .nav-main > ul > li:nth-child(1) {
-  margin-right: 15px;
+  min-width: 220px;
+  margin-right: 10px;
 }
 
 .nav-main > ul > li:nth-child(2) {
-  margin-right: 290px;
+  width: 16px;
+  margin-right: 294px;
 }
 
 .nav-main > ul > li:nth-child(3) {
-  margin-right: 35px;
+  min-width: 130px;
+  margin-right: 29px;
 }
 
 .nav-main > ul > li:nth-child(4) {
-  margin-right: 110px;
+  min-width: 120px;
+  margin-right: 102px;
+}
+
+.nav-main > ul > li:nth-child(5) {
+  min-width: 120px;
 }
 
 .nav-main li li {
@@ -223,58 +409,86 @@ h2,
 .nav-main li li li a {
   text-transform: none;
   letter-spacing: normal;
-  line-height: 36px;
 }
 
 li.column-1 {
   width: 220px;
-  background-color: rgba(255, 0, 0, 0.4);
 }
 
 li.column-2,
 li.column-3 {
   width: 180px;
-  background-color: rgba(255, 0, 0, 0.4);
 }
 
 .nav-main .sub-menu {
   position: absolute;
+  top: 44px;
+  left: -60px;
   z-index: 100;
+
   width: 1100px;
-  min-height: 142px;
+  min-height: 143px;
+  margin: 0;
   padding: 0;
   padding-left: 60px;
-  margin: 0;
-  margin-left: -60px;
-  top: 43px;
-  left: 0;
+
   background-color: #f7e296;
 }
 
+.nav-main a:hover {
+  opacity: 0.6;
+}
+
+.nav-main a:active {
+  opacity: 0.3;
+}
+
 /*ШВЕЙЦАР (xD) .SUB-MENU*/
+
+label[for="sub-menuPorter"] {
+  position: relative;
+}
+
+label[for="sub-menuPorter"]::before,
+label[for="sub-menuPorter"]::after {
+  position: absolute;
+  top: -15px;
+  left: 0;
+
+  width: 16px;
+  height: 16px;
+
+  background:  url("../img/sprite.png") no-repeat;
+
+  content: "";
+}
+
+label[for="sub-menuPorter"]::before {
+  background-position: -329px -5px;
+}
+
+label[for="sub-menuPorter"]::after {
+  background-position: -303px -5px;
+}
 
 .nav-main > ul > li input[type=checkbox]:checked ~ .sub-menu {
   display: block;
 }
 
-.nav-main > ul > li input[type=checkbox]:checked + label .fa-plus {
+.nav-main > ul > li input[type=checkbox]:checked + label[for="sub-menuPorter"]::before {
   display: none;
 }
 
-.nav-main > ul > li input[type=checkbox] + label .fa-plus {
+.nav-main > ul > li input[type=checkbox] + label[for="sub-menuPorter"]::before {
   display: block;
 }
 
-.nav-main > ul > li input[type=checkbox]:checked + label .fa-minus {
+.nav-main > ul > li input[type=checkbox]:checked + label[for="sub-menuPorter"]::after {
   display: block;
 }
 
-.nav-main > ul > li input[type=checkbox] + label .fa-minus {
+.nav-main > ul > li input[type=checkbox] + label[for="sub-menuPorter"]::after {
   display: none;
-}
-
-.sub-menuToggles .fa {
-  color: rgba(0, 0, 0, 0.5);
 }
 
 .sub-menuToggles:hover {
@@ -371,72 +585,231 @@ li.column-3 {
 }
 
 .catalog-nav {
-  min-height: 70px;
   width: 760px;
+  min-height: 70px;
   margin-left: 72px;
+
   background-color: rgba(0, 115, 115, 0.5);
 }
 
 /*СТИЛИ ДЛЯ INDEX.HTML*/
 
-.main-header.index-header {
+.main-header .container {
   min-height: 300px;
   margin-bottom: 0;
+
+  background-color: #f7e296;
 }
 
 .slider.promo {
-  margin-top: -112px;
+  position: relative;
+
+  margin-top: -149px;
   margin-bottom: 106px;
-  background-color: rgba(0, 0, 255, 0.3);
 }
 
 .promo-image {
+  position: relative;
+
   float: left;
-  width: 560px;
-  min-height: 487px; /*Только для создания сетки*/
-  background-color: rgba(255, 0, 0, 0.3);
+  width: 565px;
+  min-height: 486px;
+}
+
+.promo-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .promo-content {
+  float: right;
+  width: 566px;
+  margin-top: 78px;
+
   text-align: left;
   font-size: 0;
-  float: right;
-  width: 560px;
-  min-height: 487px; /*Только для создания сетки*/
-  background-color: rgba(255, 0, 0, 0.3);
+  vertical-align: top;
 }
 
-.slider-options {
-  margin-top: 322px; /*Только для создания сетки*/
-  margin-bottom: 60px;
+.promo-content b {
+  position:relative;
+
+  display:block;
+  width:566px;
+
+  letter-spacing: 0.01em;
+  line-height: 56px;
+}
+
+.promo-content b:before,
+.promo-content b:after {
+  position: absolute;
+
+  content: "";
+}
+
+.promo-content b:before {
+  top: -40px;
+  left: 3px;
+
+  width: 100px;
+  height: 7px;
+
+  background-color: #ffffff;
+}
+
+.promo-content b span {
+  position: relative;
+  z-index: 20;
+}
+
+.promo-content b:after {
+  right: 50px;
+  top: -92px;
+  z-index: 10;
+
+  font-size: 179.2px;
+  line-height: 179.2px;
+  color: #ffffff;
+}
+
+.promo-slide:nth-of-type(1) .promo-content b:after {
+  content: "01";
+}
+
+.promo-slide:nth-of-type(2) .promo-content b:after {
+  content: "02";
+}
+
+.promo-slide:nth-of-type(3) .promo-content b:after {
+    content: "03";
+}
+
+.promo-content p {
+  padding: 4px;
+  padding-right: 80px;
+
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
 }
 
 .promo-details {
-  float: left;
-  padding-left: 42px;
-  min-height: 25px; /*Только для создания сетки*/
+  position: relative;
+
+  display: block;
+  width: 178px;
+  margin-top: 49px;
+  margin-bottom: 62px;
+  margin-left: 5px;
+  padding-left: 44px;
+
+  text-align: left;
+}
+
+.promo-details::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  z-index: 10;
+
   width: 220px;
-  background-color: rgba(0, 255, 0, 0.3);
+  height: 8px;
+
+  background-color: #f0c52e;
+
+  content: "";
+}
+
+.promo-details span {
+  position: relative;
+  z-index: 20;
+}
+
+.promo-details:hover::before {
+  height: 40px;
+}
+
+.promo-details:active span {
+  opacity: 0.3;
 }
 
 .slider-control {
-  float:right;
-  min-width: 120px;
-  min-height: 25px; /*Только для создания сетки*/
-  margin-right: 60px;
-  background-color: rgba(0, 255, 0, 0.3);
+  position: absolute;
+  right: 61px;
+  bottom: 160px;
+
+  line-height: 0;
+  font-size: 0;
+  vertical-align: top;
+
+  list-style:none;
+}
+
+.slider-control li {
+  position: relative;
+
+  display: inline-block;
+  width:33px;
+}
+
+.slider-control a::before {
+  position: absolute;
+  top:50%;
+  left:0;
+
+  width: 4px;
+  height: 4px;
+
+  border: 3px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+
+  content: "";
+}
+
+.slider-control a:hover::before {
+  border-color: rgba(0, 0, 0, 0.4)
+}
+
+.slider-control a:active::before {
+  border-color: rgba(0, 0, 0, 1)
 }
 
 .promo-attribute {
   display: inline-block;
-  min-height: 78px; /*Только для создания сетки*/
-  width: 160px;
-  background-color: rgba(0, 255, 0, 0.3);
+  min-width: 154px;
+  padding-left: 6px;
+
+  vertical-align: top;
 }
 
-.promo-attribute:nth-child(2) {
-  width: 140px;
+.promo-attribute:nth-of-type(2) {
+  min-width: 134px;
 }
+
+.promo-attribute .promo-attrTitle {
+  font-family: "Gilroy Light", "Arial Black", sans-serif;
+  font-size: 36px;
+  letter-spacing: 0.01em;
+}
+
+.promo-attribute .promo-attrDesc {
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+}
+
+
+
+
+
+
+
 
 .popular-items .btn-popular {
   display:inline-block;
@@ -545,7 +918,7 @@ li.column-3 {
 .container-WP { /*WP-wihtout-padding*/
   margin: 0 auto;
   width: 1160px;
-  background-color: rgba(0, 255, 255, 0.6);
+  /*background-color: rgba(0, 255, 255, 0.6);*/
 }
 
 .clearfix::after {
