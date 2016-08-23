@@ -48,6 +48,7 @@ h2,
 .logo {
   font-family: "Gilroy Extra Bold", "Arial Black", sans-serif;
   color: #000000;
+  letter-spacing: 0.01em;
 }
 
 h1,
@@ -713,7 +714,7 @@ label[for="sub-menuPorter"]::after {
   text-align: left;
 }
 
-.promo-detail::before {
+.promo-details::before {
   position: absolute;
   top: 50%;
   left: 0;
@@ -1052,19 +1053,123 @@ label[for="sub-menuPorter"]::after {
   margin-bottom: 85px;
 }
 .info-block {
+  position: relative;
+
   float:left;
-  width: 560px;
-  min-height: 570px;
-  margin-right: 40px;
-  background-color: rgba(255, 0, 0, 0.3);
+  width: 460px;
+  min-height: 555px;
+  padding-top: 12px;
 }
 
 .info-block:last-child {
-  margin-right: 0px
+  float: right;
+  width: 560px;
 }
 
-/*ВСПОМОГАТЕЛЬНЫЕ СТИЛИ*/
+.info-block::before {
+  position: absolute;
+  top: 0;
+  left: 0;
 
+  width: 80px;
+  height: 8px;
+
+  background-color: #000000;
+
+  content: "";
+}
+
+.info-block p {
+  margin-bottom: 30px;
+
+  line-height: 30px;
+  letter-spacing: 0.01em;
+}
+
+.info-block ul {
+  margin:0;
+  padding: 0;
+  padding-top: 5px;
+
+  list-style: none;
+}
+
+.info-block li {
+  position: relative;
+
+  padding-left: 35px;
+
+  font-family: "Gilroy Extra Bold", "Arial Black", sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.info-block li::before {
+  position: absolute;
+  top: 15px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+
+  border: 3px solid #000000;
+  border-radius: 50%;
+
+  opacity: 0.3;
+
+  content: "";
+}
+
+.info-block .map {
+  margin-top: 10px;
+}
+
+.info-block .btn-info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 260px;
+
+  text-align: center;
+}
+
+.btn-info::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 10;
+  transform: translate(0, -50%);
+
+
+  width: 100%;
+  height: 8px;
+
+  background-color: #f0c52e;
+
+  content: "";
+}
+
+.btn-info span {
+  position: relative;
+  z-index: 20;
+}
+
+.btn-info:hover::before {
+  height: 40px;
+}
+
+.btn-info:active span {
+  opacity: 0.3;
+}
+
+
+
+
+
+
+/*ВСПОМОГАТЕЛЬНЫЕ СТИЛИ*/
 
 .hidden {
   display: none;
