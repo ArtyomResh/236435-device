@@ -54,6 +54,8 @@ h1,
 h2,
 .promo-content b {
   font-size: 47px;
+  line-height: 56px;
+  letter-spacing: 0.01em;
 }
 
 .nav-main li a,
@@ -638,9 +640,6 @@ label[for="sub-menuPorter"]::after {
 
   display:block;
   width:566px;
-
-  letter-spacing: 0.01em;
-  line-height: 56px;
 }
 
 .promo-content b:before,
@@ -710,14 +709,14 @@ label[for="sub-menuPorter"]::after {
   text-align: left;
 }
 
-.promo-details::before {
+.promo-detail::before {
   position: absolute;
   top: 50%;
   left: 0;
   transform: translate(0, -50%);
   z-index: 10;
 
-  width: 220px;
+  width: 100%;
   height: 8px;
 
   background-color: #f0c52e;
@@ -775,7 +774,8 @@ label[for="sub-menuPorter"]::after {
   border-color: rgba(0, 0, 0, 0.4)
 }
 
-.slider-control a:active::before {
+.slider-control a:active::before,
+.slider-control a.current::before  {
   border-color: rgba(0, 0, 0, 1)
 }
 
@@ -803,9 +803,6 @@ label[for="sub-menuPorter"]::after {
   line-height: 40px;
   letter-spacing: 0.01em;
 }
-
-
-
 
 .popular-items {
   margin-bottom: 262px;
@@ -866,15 +863,94 @@ label[for="sub-menuPorter"]::after {
 .slider.services {
   min-height: 288px; /*Только для создания сетки*/
   margin-bottom: 95px;
-  background-color: rgba(0, 255, 0, 0.3);
+
+  background-color: #e5e5e5;
 }
 
-.services-menu {
+.services-nav {
+  position: relative;
+
   float: left;
   width: 300px;
-  margin-top: -20px;
   min-height: 170px;/*Только для создания сетки*/
-  background-color: rgba(255, 0, 0, 0.3);
+  margin-top: -20px;
+}
+
+.services-nav:before {
+  position:absolute;
+  top: -80px;
+  right: 16px;
+
+  height: 320px;;
+  width: 8px;
+
+  background-color: #000000;
+
+  content: "";
+}
+
+.services-nav ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.services-nav li {
+  width:280px;
+  height: 40px;
+  margin-bottom: 25px;
+}
+
+.services-nav li a {
+  position: relative;
+  display: block;
+  width:140px;
+  padding-left: 16px;
+
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+
+.btn-services::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  z-index: 10;
+
+  width: 100%;
+  height: 8px;
+
+  background-color: #f0c52e;
+
+  content: "";
+}
+
+.btn-services span {
+  position: relative;
+  z-index: 20;
+}
+
+.btn-services:hover::before {
+  height: 40px;
+}
+
+.btn-services:active::before,
+.btn-active.btn-services::before  {
+  background-color: #000000;
+  height: 40px;
+  width: 280px;
+}
+
+.btn-active.btn-services {
+  color: #f7e39a;
+}
+
+.btn-services:active {
+  color: #f7e39a;
 }
 
 .services-slides {
@@ -884,6 +960,12 @@ label[for="sub-menuPorter"]::after {
   min-height: 170px;/*Только для создания сетки*/
   background-color: rgba(255, 0, 0, 0.3);
 }
+
+
+
+
+
+
 
 .partners {
   text-align:center;
