@@ -98,13 +98,36 @@ h2,
   position: relative;
   top: -20px;
   left: -3px;
+
+  -webkit-user-select: none;
+  cursor: default;
 }
 
-.user-line a {
+.logo a {
+  text-decoration: none;
+}
+
+.main-header .logo a {
+  color: #000000;
+}
+
+.main-header .logo a:hover {
+  color: #464646;
+}
+
+.main-header .logo a:active {
+  color: #666666;
+}
+
+.user-line a,
+.footer-line:nth-of-type(1) a {
   font-family: "Open Sans Light", "Arial", sans-serif;
   font-size: 15px;
   line-height: 36px;
   text-decoration: none;
+}
+
+.user-line a {
   color: #000000;
 }
 
@@ -212,10 +235,10 @@ h2,
 
   background: url("../img/sprite.png") no-repeat;
 
-  content:"";
+  content: "";
 }
 
-.btn-user:hover {
+.main-header .btn-user:hover {
   opacity: 0.6;
 }
 
@@ -272,92 +295,239 @@ h2,
 
 .user-line {
   margin-bottom: 35px;
-
-  vertical-align: top;
 }
 
 /*FOOTER*/
 
 .main-footer {
   min-height: 263px;
-  padding-top: 60px;
-  background-color: rgba(100, 100, 100, 0.3);
+  margin-top: 91px;
+  padding-top: 64px;
+
+  background-color: #464646;
+}
+
+.main-footer,
+.main-footer a {
+  color: #ffffff;
+}
+
+.main-footer .btn-user {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-line {
-  min-height: 40px; /*Только для создания сетки*/
+  min-height: 40px;
   margin-bottom: 35px;
-  background-color: rgba(255, 100, 200, 0.3);
 }
 
 .main-footer .logo {
   float:left;
-  margin-bottom: 0;
+  margin-left: -2px;
+
+  color: #f7e184;
+
+  -webkit-user-select: none;
+  cursor: default;
 }
 
-.main-footer .user-block,
-.main-footer .user-options {
-  padding-top: 5px;
-  padding-bottom: 5px;
+.main-footer .logo a {
+  color: #f7e184;
+}
+
+.main-footer .logo a:hover {
+  color: #f0c52e;
+}
+
+.main-footer .logo a:active {
+  color: #f0c52e;
+  opacity: 0.3;
 }
 
 .main-footer .user-options {
-  width: 220px;
+  width: 225px;
+  margin-top: -4px;
   margin-left: 20px;
+
+  text-align: right;
+}
+
+.main-footer .btn-userCompare.btn-user::before {
+  background-position: -91px -5px;
+}
+
+.main-footer .btn-userCart.btn-user::before {
+  background-position: -27px -5px;
+}
+
+.main-footer .btn-userCompare.btn-user:hover::before {
+  background-position: -111px -5px;
+}
+
+.main-footer .btn-userCart.btn-user:hover::before {
+  background-position: -49px -5px;
 }
 
 .main-footer .user-block {
-  width: 350px;
+  width: 340px;
+  margin-top: -4px;
   margin-left: 400px;
+  padding-right: 10px;
+
+  text-align: right;
+}
+
+.main-footer .btn-userLogin.btn-user::before,
+.main-footer .btn-userName.btn-user::before {
+  background-position: -452px -5px;
+}
+
+.main-footer .btn-userLogin.btn-user:hover::before,
+.main-footer .btn-userName.btn-user:hover::before {
+  background-position:-475px -5px;
+}
+
+.main-footer .btn-user:hover{
+    color: rgba(255, 255, 255, 1);
 }
 
 .main-footer .address {
   float:left;
   width: 260px;
-  min-height: 20px; /*Только для создания сетки*/
-  margin-right: 40px;
-  background-color: rgba(255, 255, 0, 0.3);
+  margin-top: -5px;
 }
 
 .footer-links {
   float:left;
-  width: 600px;
-  min-height: 20px; /*Только для создания сетки*/
-  background-color: rgba(255, 255, 0, 0.3);
+  min-width: 480px;
+  margin-top: -2px;
+  margin-left: 77px;
+}
+
+.footer-links a {
+  margin-left: 30px;
 }
 
 .main-footer .tel{
   float: right;
   width: 200px;
-  min-height: 20px; /*Только для создания сетки*/
-  background-color: rgba(255, 255, 0, 0.3);
+  margin-top: -5px;
+  margin-left: 40px;
+
+  text-align: right;
 }
 
 .footer-line:last-child {
-  margin-top: 45px;
-  margin-bottom: 0px;
+  margin-top: 41px;
+
+  font-size: 0;
+  text-align: justify;
+  vertical-align: top;
+}
+
+.footer-line:last-child::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  /*Для корректной работы text-align: justify*/
 }
 
 .footer-strip {
-  float:left;
+  position: relative;
+
+  display:  inline-block;
+  width: 60px;
+}
+
+.footer-strip::before {
+  position: absolute;
+  top: 15px;
+  left: 0;
+
   width: 80px;
-  min-height: 40px; /*Только для создания сетки*/
-  margin-right: 280px;
-  background-color: rgba(255, 255, 0, 0.3);
+  height: 8px;
+
+  background-color: #f7e184;
+
+  content: "";
 }
 
 .footer-social {
-  float: left;
-  width: 440px;
-  min-height: 40px; /*Только для создания сетки*/
-  background-color: rgba(255, 255, 0, 0.3);
+  position: relative;
+
+  display:  inline-block;
+  min-width: 148px;
+}
+
+.btn-social {
+  position: absolute;
+
+  width: 38px;
+  height: 38px;
+
+  background: url("../img/sprite.png") no-repeat;
+
+  opacity: 0.3;
+}
+
+.btn-social:hover {
+  opacity: 0.6;
+}
+
+.btn-social:active {
+  opacity: 0.1;
+}
+
+.btn-social-fb {
+  top: 0;
+  left: 0;
+
+  background-position: -131px -5px;
+}
+
+.btn-social-inst {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  background-position: -254px -5px;
+}
+
+.btn-social-twitter {
+  top: 0;
+  right: 0;
+
+  background-position: -381px -5px;
 }
 
 .copyright {
-  float: right;
+  position: relative;
+
+  display:  inline-block;
   width: 60px;
-  min-height: 20px; /*Только для создания сетки*/
-  background-color: rgba(255, 255, 0, 0.3);
+}
+
+.copyright:before {
+  position: absolute;
+  top:0;
+  right:0;
+
+  width: 27px;
+  height: 34px;
+
+  background: url("../img/sprite.png") no-repeat -180px -5px;
+
+  content: "";
+}
+
+.copyright:hover::before {
+  background-position: -217px -5px;
+}
+
+.copyright:active::before {
+  background-position: -217px -5px;
+  opacity: 0.3;
 }
 
 /*МЕНЮ ОСНОВНОЙ НАВИГАЦИИ*/
@@ -438,11 +608,13 @@ li.column-3 {
   background-color: #f7e296;
 }
 
-.nav-main a:hover {
+.nav-main a:hover,
+.footer-links a:hover {
   opacity: 0.6;
 }
 
-.nav-main a:active {
+.nav-main a:active,
+.footer-links a:active {
   opacity: 0.3;
 }
 
@@ -786,7 +958,7 @@ label[for="sub-menuPorter"]::after {
   border-color: rgba(0, 0, 0, 1)
 }
 
-/*СТИЛИ ДЛЯ АТРИБУТОВ ПРОМО ТОВАРА*/
+/*СТИЛИ ДЛЯ АТРИБУТОВ ПРОМО-ТОВАРА*/
 
 .promo-attribute {
   display: inline-block;
@@ -1049,9 +1221,6 @@ label[for="sub-menuPorter"]::after {
 
 /*СТИЛИ ДЛЯ ИНФОРМАЦИОННЫХ БЛОКОВ*/
 
-.info {
-  margin-bottom: 85px;
-}
 .info-block {
   position: relative;
 
@@ -1163,11 +1332,6 @@ label[for="sub-menuPorter"]::after {
 .btn-info:active span {
   opacity: 0.3;
 }
-
-
-
-
-
 
 /*ВСПОМОГАТЕЛЬНЫЕ СТИЛИ*/
 
