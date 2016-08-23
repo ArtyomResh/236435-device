@@ -603,6 +603,8 @@ label[for="sub-menuPorter"]::after {
   background-color: #f7e296;
 }
 
+/*СТИЛИ ДЛЯ СЛАЙДЕРА ПРОМО ТОВАРОВ*/
+
 .slider.promo {
   position: relative;
 
@@ -696,6 +698,8 @@ label[for="sub-menuPorter"]::after {
   letter-spacing: 0.01em;
 }
 
+/*СТИЛИ ДЛЯ ССЫЛКИ "ПОДРОБНЕЕ"*/
+
 .promo-details {
   position: relative;
 
@@ -736,6 +740,8 @@ label[for="sub-menuPorter"]::after {
 .promo-details:active span {
   opacity: 0.3;
 }
+
+/*СТИЛИ ДЛЯ КОНТРОЛЕРА СЛАЙДОВ*/
 
 .slider-control {
   position: absolute;
@@ -779,6 +785,8 @@ label[for="sub-menuPorter"]::after {
   border-color: rgba(0, 0, 0, 1)
 }
 
+/*СТИЛИ ДЛЯ АТРИБУТОВ ПРОМО ТОВАРА*/
+
 .promo-attribute {
   display: inline-block;
   min-width: 154px;
@@ -803,6 +811,8 @@ label[for="sub-menuPorter"]::after {
   line-height: 40px;
   letter-spacing: 0.01em;
 }
+
+/*СТИЛИ ДЛЯ БЛОКА ПОПУЛЯРНЫХ ТОВАРОВ*/
 
 .popular-items {
   margin-bottom: 262px;
@@ -856,23 +866,22 @@ label[for="sub-menuPorter"]::after {
   opacity: 0.3;
 }
 
-
-
-
+/*СТИЛИ ДЛЯ СЛАЙДЕРА СЕРВИСОВ*/
 
 .slider.services {
-  min-height: 288px; /*Только для создания сетки*/
+  min-height: 288px;
   margin-bottom: 95px;
 
   background-color: #e5e5e5;
 }
+
+/*СТИЛИ ДЛЯ НАВИГАЦИИ ПО СЛАЙДАМ*/
 
 .services-nav {
   position: relative;
 
   float: left;
   width: 300px;
-  min-height: 170px;/*Только для создания сетки*/
   margin-top: -20px;
 }
 
@@ -904,6 +913,7 @@ label[for="sub-menuPorter"]::after {
 
 .services-nav li a {
   position: relative;
+
   display: block;
   width:140px;
   padding-left: 16px;
@@ -913,13 +923,13 @@ label[for="sub-menuPorter"]::after {
   letter-spacing: 0.2em;
 }
 
-
 .btn-services::before {
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translate(0, -50%);
   z-index: 10;
+  transform: translate(0, -50%);
+
 
   width: 100%;
   height: 8px;
@@ -941,31 +951,74 @@ label[for="sub-menuPorter"]::after {
 .btn-services:active::before,
 .btn-active.btn-services::before  {
   background-color: #000000;
-  height: 40px;
   width: 280px;
+  height: 40px;
 }
 
-.btn-active.btn-services {
-  color: #f7e39a;
-}
-
+.btn-active.btn-services,
 .btn-services:active {
   color: #f7e39a;
 }
 
+/*СТИЛИ ДЛЯ СЛАЙДОВ*/
+
 .services-slides {
+  position: relative;
+
   float: right;
   width: 760px;
   margin-top: -20px;
-  min-height: 170px;/*Только для создания сетки*/
-  background-color: rgba(255, 0, 0, 0.3);
 }
 
+.services-slides h2 {
+  padding: 0;
+  margin-top: -10px;
+  margin-bottom: 28px;
 
+  letter-spacing: 0.01em;
+}
 
+.services-slides p {
+  width: 440px;
 
+  line-height: 30px;
+}
 
+.services-slide::after {
+  position: absolute;
+  top: 50%;
+  right: 65px;
+  transform: translate(0, -50%);
 
+  content: "";
+}
+
+.services-slide:nth-of-type(1)::after {
+  width: 136px;
+  height: 164px;
+
+  background: url("../img/delivery.png") no-repeat;
+}
+
+.services-slide:nth-of-type(2)::after {
+  transform: translate(0, -60%);
+
+  width: 171px;
+  height: 195px;
+
+  background: url("../img/warranty.png") no-repeat;
+}
+
+.services-slide:nth-of-type(3)::after {
+  transform: translate(0, -60%);
+
+  width: 156px;
+  height: 188px;
+
+  background: url("../img/credit.png") no-repeat;
+}
+
+/*СТИЛИ БЛЯ БЛОКА ПАРТНЁРОВ*/
 
 .partners {
   text-align:center;
@@ -982,6 +1035,9 @@ label[for="sub-menuPorter"]::after {
 .btn-partner + .btn-partner {
   margin-left: 40px;
 }
+
+/*СТИЛИ ДЛЯ ИНФОРМАЦИОННЫХ БЛОКОВ*/
+
 .info {
   margin-bottom: 85px;
 }
