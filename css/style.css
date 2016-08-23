@@ -1021,15 +1021,25 @@ label[for="sub-menuPorter"]::after {
 /*СТИЛИ БЛЯ БЛОКА ПАРТНЁРОВ*/
 
 .partners {
+  margin-bottom: 90px;
+
   text-align:center;
   font-size: 0;
   line-height: 0;
-  margin-bottom: 90px;
-  background-color: rgba(255, 0, 0, 0.3);
 }
 
 .btn-partner {
   display: inline-block;
+}
+
+.btn-partner img {
+  -webkit-filter: grayscale(1);
+  opacity: 0.2;
+}
+
+.btn-partner:hover img {
+  -webkit-filter: none;
+  opacity: 1;
 }
 
 .btn-partner + .btn-partner {
