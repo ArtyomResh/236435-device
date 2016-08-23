@@ -605,7 +605,7 @@ label[for="sub-menuPorter"]::after {
   position: relative;
 
   margin-top: -149px;
-  margin-bottom: 106px;
+  margin-bottom: 103px;
 }
 
 .promo-image {
@@ -807,27 +807,12 @@ label[for="sub-menuPorter"]::after {
 
 
 
-
-
-
-
-.popular-items .btn-popular {
-  display:inline-block;
-  height: 160px;
-  width: 160px;
-  vertical-align: top;
-  font-size: 18px;
-  text-decoration: none;
-  background-color: rgba(0, 255, 0, 0.3);
-}
-
 .popular-items {
+  margin-bottom: 262px;
+
   font-size: 0;
   text-align: center;
-  vertical-align: bottom;
-  line-height: 160px;
-  background-color: rgba(255, 0, 0, 0.3);
-  margin-bottom: 262px;
+  vertical-align: top;
 }
 
 .btn-popular + .btn-popular {
@@ -839,15 +824,44 @@ label[for="sub-menuPorter"]::after {
 }
 
 .btn-popular:nth-of-type(2) img {
-  vertical-align: bottom;;
+  vertical-align: bottom;
+}
+
+.popular-items .btn-popular {
+  display:inline-block;
+  height: 160px;
+  width: 160px;
+
+  font-family: "Gilroy Extra Bold", "Arial Black", sans-serif;
+  font-size: 18px;
+  line-height: 160px;
+  vertical-align: top;
+  text-decoration: none;
+  color: #000000;
+
+  background-color: #f7e296;
 }
 
 .btn-popular p {
+  margin-top: 34px;
+
   text-align: left;
-  vertical-align: top;
   line-height: normal;
-  margin-top: 30px;
+  letter-spacing: 0.01em;
 }
+
+.btn-popular:hover {
+  background-color: #f0c52e;
+}
+
+.btn-popular:active > img,
+.btn-popular:active > p  {
+  opacity: 0.3;
+}
+
+
+
+
 
 .slider.services {
   min-height: 288px; /*Только для создания сетки*/
