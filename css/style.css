@@ -774,8 +774,7 @@ cursor: default;
 }
 
 .catalog-block {
-  min-height: 1283px; /*для сетки*/
-  background-color: rgba(255, 0, 0, 0.3);
+  min-height: 1283px; /*для сетки!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 .catalog-block:first-child {
@@ -790,8 +789,6 @@ cursor: default;
   float: right;
   width: 972px;
   margin-right: 45px;
-
-  background-color: rgba(255, 0, 0, 0.3);
 }
 
 .block-title,
@@ -925,8 +922,6 @@ cursor: default;
   width: 200px;
   padding-left: 200px;
   padding-top: 65px;
-
-  /*background-color: rgba(0, 0, 255, 0.3);*/
 }
 
 .filter-title {
@@ -1186,26 +1181,143 @@ input.max-value {
   opacity: 0.3;
 }
 
-/*СТИЛИ ДЛЯ КНОПКИ БЛОКА ТОВАРОВ*/
+/*СТИЛИ ДЛЯ ТОВАРОВ КАТАЛОГА*/
 
-/*.catalog-items {
-  padding-top: 60px;
+.catalog-items {
+  padding-top: 70px;
   padding-left: 72px;
+
   font-size: 0;
   line-height: 0;
-  background-color: rgba(255, 0, 0, 0.5);
 }
 
 .item {
+  position: relative;
+
   display: inline-block;
-  min-height: 486px;
+  height: 486px;
   width: 360px;
   margin-right: 40px;
   margin-bottom: 20px;
-  background-color: rgba(0, 115, 115, 0.5);
 }
 
-.catalog-nav {
+
+.item-options {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: none;
+  width: 360px;
+  height: 380px;
+
+  background-color: rgba(238, 238, 238, 0.7);
+}
+
+.item-options:hover {
+  display: block;
+
+  cursor: pointer;
+}
+
+.item-pic:hover ~ .item-options {
+  display: block;
+}
+
+.item-options a {
+  position: absolute;
+  left: 50%;
+
+  transform: translate(-50%,-50%);
+}
+
+.item-options .btn {
+  top: 50%;
+
+  width: 200px;
+
+  text-align: center;
+}
+
+.item-options .btn::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 10;
+  transform: translate(0, -50%);
+
+
+  width: 100%;
+  height: 8px;
+
+  background-color: #f0c52e;
+
+  content: "";
+}
+
+.item-options .btn span {
+  position: relative;
+  z-index: 20;
+}
+
+.item-options .btn:hover::before {
+  height: 40px;
+}
+
+.item-options .btn:active span {
+  opacity: 0.3;
+}
+
+.item-options .btn-itemCompare {
+  top: 58%;
+
+  font-size: 13px;
+  color: #000000;
+  text-decoration: none;
+
+  opacity: 0.5;
+}
+
+.item-options .btn-itemCompare:hover {
+  opacity: 1;
+}
+
+.item-options .btn-itemCompare:active {
+  opacity: 0.2;
+}
+
+.item-details {
+  padding-top: 30px;
+
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+}
+
+.item-name a {
+  float: left;
+
+  font-style: normal;
+  font-size: 18px;
+  font-family: "Gilroy Extra Bold", "Arial Black", sans-serif;
+  text-align: left;
+  color: #000000;
+  text-decoration: none;
+}
+
+.item-price {
+  float: right;
+
+  font-family: "Gilroy Light", "Arial Black", sans-serif;
+}
+
+
+
+
+
+
+
+/*.catalog-nav {
   width: 760px;
   min-height: 70px;
   margin-left: 72px;
@@ -1805,4 +1917,27 @@ input.max-value {
   content: "";
   display: table;
   clear: both;
+}
+
+.item-new::before {
+  position: absolute;
+  top: 27px;
+  right: 30px;
+
+  width: 56px;
+  height: 56px;
+
+  border: 2px solid #cfcfcf;
+  border-radius: 50%;
+
+  font-size: 14px;
+  line-height: 58px;
+  font-family: "Gilroy Extra Bold", "Arial Black", sans-serif;
+  text-align: center;
+  color: #cfcfcf;
+
+
+  content: "NEW";
+
+
 }
