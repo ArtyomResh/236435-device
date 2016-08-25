@@ -322,6 +322,10 @@ h3 {
   background-color: #464646;
 }
 
+/*.main-footer.main-footer-catalog {
+  margin-top: 0;
+}*/
+
 .main-footer,
 .main-footer a {
   color: #ffffff;
@@ -446,10 +450,11 @@ h3 {
 }
 
 .footer-line:last-child::after {
-  content: "";
   display: inline-block;
   width: 100%;
   height: 0;
+
+  content: "";
   /*Для корректной работы text-align: justify*/
 }
 
@@ -774,8 +779,9 @@ cursor: default;
 }
 
 .catalog-block {
-  min-height: 1283px; /*для сетки!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  min-height: 1283px;
 }
+
 
 .catalog-block:first-child {
   float: left;
@@ -1311,19 +1317,72 @@ input.max-value {
   font-family: "Gilroy Light", "Arial Black", sans-serif;
 }
 
+/*СТИЛИ ДЛЯ НАВИГАЦИИ ПО СПИСКУ ТОВАРОВ*/
 
-
-
-
-
-
-/*.catalog-nav {
+.catalog-nav {
   width: 760px;
-  min-height: 70px;
+  margin-top: -15px;
   margin-left: 72px;
 
-  background-color: rgba(0, 115, 115, 0.5);
-}*/
+  font-size:0;
+  text-align: justify;
+  vertical-align: top;
+
+  background-color: #ebebeb;
+}
+
+.catalog-nav:after {
+  display: inline-block;
+  width: 100%;
+  height: 0;
+
+  content:"";
+  /*Для корректной работы text-align: justify*/
+}
+.catalog-nav a {
+  display: inline-block;
+  width: 40px;
+  height: 70px;
+
+  font-size: 16px;
+  line-height: 70px;
+  font-family:  "Gilroy Extra Bold", "Arial Black", sans-serif;
+  color: #000000;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.catalog-nav .nav-pageNumbers {
+  display: inline-block;
+  min-width: 120px;
+}
+
+.nav-pageNumbers a {
+  opacity: 0.3;
+}
+
+.catalog-nav .btn-catalogNav {
+  width: 130px;
+}
+
+.catalog-nav .btn-catalogNav:hover {
+  background-color: #d9d9d9;
+}
+
+.catalog-nav .btn-catalogNav:active {
+  color: rgba(0, 0, 0, 0.08);
+}
+
+.nav-pageNumbers a:hover {
+  opacity: 0.6;
+}
+
+.catalog-nav .current-page,
+.nav-pageNumbers a:active {
+  opacity: 1;
+}
 
 /*СТИЛИ ДЛЯ INDEX.HTML*/
 
@@ -1938,6 +1997,9 @@ input.max-value {
 
 
   content: "NEW";
+}
 
-
+.catalog-nav .disabled {
+  background-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.08);
 }
