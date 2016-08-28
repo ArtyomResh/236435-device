@@ -388,7 +388,9 @@
               Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
               проверить работоспособность покупки. Всякое бывает.
             </p>
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4498.247553199715!2d37.525425290340735!3d55.68683577280571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1471962819682" width="560" height="222" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <a href="https://goo.gl/maps/R7sCUJavnXy" class="map">
+              <img src="img/map.jpg" width="560" height="222" alt="Местоположение на карте">
+            </a>
             <a href="#" class="btn btn-info"><span>Напишите нам</span></a>
           </div>
         </div>
@@ -456,6 +458,32 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal-content-wu"> <!--wu-write-us-->
+      <button class="modal-content-close" type="button" tittle="Закрыть">Закрыть</button>
+      <form class="write-us-form" action="#" method="post">
+        <div class="form-columns clearfix">
+          <div class="form-column left-column">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+          </div>
+          <div class="form-column right-column">
+            <label for="e-mail">Ваш e-mail:</label>
+            <input type="email" name="e-mail" id="e-mail" placeholder="Для отправки ответа">
+          </div>
+        </div>
+        <label for="message">Текст письма:</label>
+        <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+        <button class="btn" type="submit"><span>Отправить</span></button>
+      </form>
+    </div>
+
+    <div class="modal-content-map">
+      <button class="modal-content-close" type="button" tittle="Закрыть">Закрыть</button>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2249.123708110617!2d37.52734231314214!3d55.686836963576624!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2s!4v1472389558527" width="960" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <div class="modal-overlay"></div>
 
   </body>
 </html>
