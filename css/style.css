@@ -94,7 +94,7 @@ h3,
 .range-values input,
 .item-price,
 .promo-attrTitle  {
-  font-family: "Gilroy Light", "Arial Black", sans-serif;
+  font-family: "Gilroy Light", "Helvetica", sans-serif;
   letter-spacing: 0.01em;
 }
 
@@ -306,6 +306,8 @@ h3,
   position: relative;
 
   display: inline-block;
+
+  vertical-align: top;
 }
 
 .btn-user::before {
@@ -529,6 +531,8 @@ h3,
 
   display:  inline-block;
   width: 60px;
+
+  vertical-align: top;
 }
 
 .footer-strip::before {
@@ -549,6 +553,8 @@ h3,
 
   display:  inline-block;
   min-width: 148px;
+
+  vertical-align: top;
 }
 
 .btn-social {
@@ -593,6 +599,8 @@ h3,
 
   display:  inline-block;
   width: 60px;
+
+  vertical-align: top;
 }
 
 .copyright:before {
@@ -633,7 +641,7 @@ h3,
 }
 
 .nav-main > ul > li:nth-child(1) {
-  min-width: 220px;
+  width: 220px;
   margin-right: 10px;
 }
 
@@ -643,22 +651,23 @@ h3,
 }
 
 .nav-main > ul > li:nth-child(3) {
-  min-width: 130px;
+  width: 130px;
   margin-right: 29px;
 }
 
 .nav-main > ul > li:nth-child(4) {
-  min-width: 120px;
+  width: 120px;
   margin-right: 102px;
 }
 
 .nav-main > ul > li:nth-child(5) {
-  min-width: 120px;
+  width: 120px;
 }
 
 .nav-main li li {
   display: inline-block;
   margin-right: 20px;
+
   vertical-align: top;
 }
 
@@ -783,6 +792,7 @@ label[for="sub-menuPorter"]::after {
   margin-right: 38px;
 
   text-align: left;
+  vertical-align: top;
 }
 
 .breadcrumbs li:not(:last-child)::after {
@@ -1141,6 +1151,10 @@ input.max-value {
   content: "";
 }
 
+.catalog-filters input[type="checkbox"]:checked + label::before {
+  background-color: #c4c4c4;
+}
+
 .catalog-filters label:hover::before {
   background-color: #cecece;
 }
@@ -1180,6 +1194,10 @@ input.max-value {
   content: "";
 }
 
+.catalog-filters input[type="radio"]:checked + label::before {
+  border-color: #c4c4c4;
+}
+
 .catalog-filters input[type="radio"] + label:hover::before {
   border-color: #cecece;
 }
@@ -1216,6 +1234,8 @@ input.max-value {
   width: 360px;
   margin-right: 40px;
   margin-bottom: 20px;
+
+  vertical-align: top;
 }
 
 
@@ -1321,11 +1341,14 @@ input.max-value {
   font-size: 16px;
   line-height: 70px;
   text-align: center;
+  vertical-align: top;
 }
 
 .catalog-nav .nav-pageNumbers {
   display: inline-block;
-  min-width: 120px;
+  width: 120px;
+
+  vertical-align: top;
 }
 
 .nav-pageNumbers a {
@@ -1680,7 +1703,7 @@ input.max-value {
   width: 136px;
   height: 164px;
 
-  background: url("../img/delivery.png") no-repeat;
+  background: url("../img/services-delivery.png") no-repeat;
 }
 
 .services-slide:nth-of-type(2)::after {
@@ -1689,7 +1712,7 @@ input.max-value {
   width: 171px;
   height: 195px;
 
-  background: url("../img/warranty.png") no-repeat;
+  background: url("../img/services-warranty.png") no-repeat;
 }
 
 .services-slide:nth-of-type(3)::after {
@@ -1698,7 +1721,7 @@ input.max-value {
   width: 156px;
   height: 188px;
 
-  background: url("../img/credit.png") no-repeat;
+  background: url("../img/services-credit.png") no-repeat;
 }
 
 /*СТИЛИ БЛЯ БЛОКА ПАРТНЁРОВ*/
@@ -1713,6 +1736,8 @@ input.max-value {
 
 .btn-partner {
   display: inline-block;
+
+  vertical-align: top;
 }
 
 .btn-partner img {
@@ -1736,8 +1761,9 @@ input.max-value {
 
   float:left;
   width: 460px;
-  min-height: 555px;
+  min-height: 490px;
   padding-top: 12px;
+  padding-bottom: 65px;
 }
 
 .info-block:last-child {
@@ -1895,11 +1921,13 @@ input.max-value {
   left: 50%;
   z-index: 200;
 
-  display: none;
+  /*display: none;*/
   width: 960px;
   height: 560px;
 
   transform: translate(-50%,-50%);
+
+  background: #ffffff url("../img/map-big.jpg") no-repeat;
 
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
 }
