@@ -3,41 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог,HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   </head>
-  <body class="body-catalog">
+  <body>
 
     <!--Хедер-->
 
-    <header class="main-header">
+    <header class="main-header main-header-catalog">
       <div class="container">
+
         <div class="logo">
-          <!-- <a href="index.html">
+          <a href="index.html">
             DEVICE
-          </a> -->
+          </a>
         </div>
 
         <div class="header-line user-line clearfix">
           <div class="site-search">
-            <!-- <form action="#" method="get">
+            <form action="#" method="get">
               <label for="search">
-                Здесь будет иконка из иконочного шрифта в виде лупы
+                <!-- Здесь будет иконка из иконочного шрифта в виде лупы -->
               </label>
               <input type="search" name="search" id="search" placeholder="Поиск по сайту">
               <a href="#" class="btn-search">Найти</a>
-            </form> -->
+            </form>
           </div>
 
           <div class="user-block">
-            <!-- <a href="#" class="btn-user btn-userName">Валентин Петухов</a>
-            <a href="#" class="btn-user btn-userLogin">Войти</a>
-            <a href="#" class="btn-user btn-userLogout">Выйти</a> -->
+            <a href="#" class="btn-user btn-userName">Валентин Петухов</a>
+            <a href="#" class="btn-user btn-userLogin hidden">Войти</a>
+            <a href="#" class="btn-user btn-userLogout">Выйти</a>
           </div>
 
           <div class="user-options">
-            <!-- <a href="#" class="btn-user btn-userCompare">Сравнить</a>
-            <a href="#" class="btn-user btn-userCart">Корзина</a> -->
+            <a href="#" class="btn-user btn-userCompare">Сравнить</a>
+            <a href="#" class="btn-user btn-userCart">Корзина</a>
           </div>
         </div>
 
@@ -50,12 +51,7 @@
               </li>
               <li>
                 <input type="checkbox" id="sub-menuPorter">
-                <label for="sub-menuPorter">
-                  <a class="sub-menuToggles">
-                    <span class="fa fa-plus"></span>
-                    <span class="fa fa-minus"></span>
-                  </a>
-                </label>
+                <label for="sub-menuPorter"></label>
                 <ul class="sub-menu hidden">
                   <li class="column-1">
                     <ul>
@@ -106,10 +102,10 @@
 
     <section class="breadcrumbs">
       <div class="container">
-      <!-- <h1>Моноподы для селфи</h1>
+      <h1>Моноподы для селфи</h1>
       <ul>
         <li>
-          <a href="#">Главная</a>
+          <a href="index.html">Главная</a>
         </li>
         <li>
           <a href="#">Каталог товаров</a>
@@ -117,7 +113,7 @@
         <li>
           <a class="current-page">Моноподы для селфи</a>
         </li>
-      </ul> -->
+      </ul>
       </div>
     </section>
 
@@ -125,22 +121,32 @@
 
       <section class="catalog-block">
 
-          <div class="block-title"> <!--Заключил в блок, что бы можно было поменять цвет background'a-->
-            <!-- <h2>Фильтр:</h2> -->
+          <div class="block-title">
+            <h2>
+              Фильтр:
+            </h2>
           </div>
 
           <form action="#" class="catalog-filters" method="get">
 
-              <!--<h3 class="filter-title">
-                <label for="range">
-                  Стоимость
-                </label>
+            <div class="filter-range">
+              <h3 class="filter-title">
+                Стоимость
               </h3>
-
-              <input type="range" id="range" min="0" max="10000" step="500" value="5000">
-              <span class="range-values">от 0</span>
-              <span class="range-values">до 5000</span>
-
+              <div class="range-controls">
+                <div class="range-scale">
+                  <div class=scale-value></div>
+                </div>
+                <div class="range-toggles">
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+              </div>
+              <div class="range-values">
+                <input type="text" class="min-value" name="min-value" value="от 0" readonly>
+                <input type="text" class="max-value" name="max-value" value="до 5000" readonly>
+              </div>
+            </div>
 
               <h3 class="filter-title">Цвет</h3>
                 <ul>
@@ -179,7 +185,7 @@
              <h3 class="filter-title">Bluetooth</h3>
              <ul>
                <li>
-                 <input type="radio" name="BTopt" id="BTopt-true" value="true" checked> BTopt-Bluetooth option
+                 <input type="radio" name="BTopt" id="BTopt-true" value="true" checked> <!--BTopt-Bluetooth option-->
                  <label for="BTopt-true">
                    Есть
                  </label>
@@ -192,22 +198,27 @@
                </li>
              </ul>
 
-             <button class="btn" type="submit">Показать</button>  -->
+             <button class="btn" type="submit"><span>Показать</span></button>
           </form>
       </section>
 
       <section class="catalog-block">
 
-        <div class="catalog-sort clearfix">
-          <div class="sort-options">
-          <!-- <h2>Сортировка:</h2>
-          <span class="sort-option"><a href="#"></a>По цене</span>
-          <span class="sort-option"><a href="#"></a>По типу</span>
-          <span class="sort-option"><a href="#"></a>По популярности</span> -->
+        <div class="catalog-sort">
+
+          <div class="sort-title">
+            <h2>Сортировка:</h2>
           </div>
+
+          <div class=sort-options>
+            <a href="#" class="sort-option current">По цене</a>
+            <a href="#" class="sort-option">По типу</a>
+            <a href="#" class="sort-option">По популярности</a>
+          </div>
+
           <div class="sort-order">
-            <!-- <span class="btn-sortOrder"><a href="#"></a></span>
-            <span class="btn-sortOrder"><a href="#"></a></span> -->
+            <a href="#" class="btn-sortOrder btn-up">От меньшего к большему</a>
+            <a href="#" class="btn-sortOrder btn-down current">От большего к меньшему</a>
           </div>
         </div>
 
@@ -216,11 +227,11 @@
         <div class="catalog-items">
 
           <article class="item">
-            <!-- <div class="item-pic">
+            <div class="item-pic">
               <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
             </div>
 
-            <div class="item-details">
+            <div class="item-details clearfix">
               <span class="item-name">
                 <a href="#">Любительская селфи-палка</a>
               </span>
@@ -229,36 +240,39 @@
               </span>
             </div>
             <div class="item-options">
-              <a href="#" class="btn">В корзину</a>
-              <a href="#" class="btn-itemCompare">Сравнить</a>
-            </div> -->
+              <a href="#" class="btn"><span>В корзину</span></a>
+              <a href="#" class="btn-itemCompare">Добавить к сравнению</a>
+            </div>
           </article>
 
           <article class="item">
-            <!-- <div class="item-pic">
+            <div class="item-pic">
               <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
             </div>
 
-            <div class="item-details">
+            <div class="item-details clearfix">
               <span class="item-name">
-                <a href="#">Профессиональная селфи-палка</a>
+                <a href="#">
+                  Профессиональная<br>
+                  селфи-палка
+                </a>
               </span>
               <span class="item-price">
                 1500 руб.
               </span>
             </div>
             <div class="item-options">
-              <a href="#" class="btn">В корзину</a>
-              <a href="#" class="btn-itemCompare">Сравнить</a>
-            </div> -->
+              <a href="#" class="btn"><span>В корзину</span></a>
+              <a href="#" class="btn-itemCompare">Добавить к сравнению</a>
+            </div>
           </article>
 
           <article class="item">
-            <!-- <div class="item-pic">
+            <div class="item-pic">
               <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
             </div>
 
-            <div class="item-details">
+            <div class="item-details clearfix">
               <span class="item-name">
                 <a href="#">Непотопляемая селфи-палка</a>
               </span>
@@ -267,112 +281,105 @@
               </span>
             </div>
             <div class="item-options">
-              <a href="#" class="btn">В корзину</a>
-              <a href="#" class="btn-itemCompare">Сравнить</a>
-            </div> -->
+              <a href="#" class="btn"><span>В корзину</span></a>
+              <a href="#" class="btn-itemCompare">Добавить к сравнению</a>
+            </div>
           </article>
 
           <article class="item item-new">
-            <!-- <div class="item-pic">
+            <div class="item-pic">
               <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
             </div>
 
             <div class="item-details">
               <span class="item-name">
-                <a href="#">Селфи-палка «Следуй за мной»</a>
+                <a href="#">
+                  Селфи-палка<br>
+                  «Следуй за мной»
+                </a>
               </span>
               <span class="item-price">
                 4900 руб.
               </span>
             </div>
             <div class="item-options">
-              <a href="#" class="btn">В корзину</a>
-              <a href="#" class="btn-itemCompare">Сравнить</a>
-            </div> -->
+              <a href="#" class="btn"><span>В корзину</span></a>
+              <a href="#" class="btn-itemCompare">Добавить к сравнению</a>
+            </div>
           </article>
 
         </div>
 
 
         <div class="catalog-nav">
-          <!-- <ul>
-            <li>
-              <a href="#" class="btn-сatalogNav btn-catalogNavPrev">Назад</a>
-            </li>
-            <li>
+          <a href="#" class="btn-catalogNav btn-catalogNavPrev disabled">Назад</a>
+            <div class=nav-pageNumbers>
               <a class="current-page">1</a>
-            </li>
-            <li>
               <a href="#">2</a>
-            </li>
-            <li>
               <a href="#">3</a>
-            </li>
-            <li>
-              <a href="#" class="btn-catalogNav btn-catalogNavNext">Вперед</a>
-            </li>
-          </ul> -->
+            </div>
+          <a href="#" class="btn-catalogNav btn-catalogNavNext">Вперед</a>
         </div>
 
       </section>
 
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer main-footer-catalog">
       <div class="container-WP">
         <div class="footer-line clearfix">
 
           <div class="logo">
-            <!-- <a href="index.html">
-             DEVICE
-            </a> -->
+            <a href="index.html">
+            DEVICE
+            </a>
           </div>
 
-
           <div class="user-block">
-            <!-- <a href="#" class="btn-user btn-userName">Валентин Петухов</a>
-            <a href="#" class="btn-user btn-userLogin">Войти</a> -->
-            <!-- <a href="#" class="btn-user btn-userLogout">Выйти</a> -->
+            <a href="#" class="btn-user btn-userName">Валентин Петухов</a>
+            <a href="#" class="btn-user btn-userLogin hidden">Войти</a>
+            <a href="#" class="btn-user btn-userLogout">Выйти</a>
           </div>
 
           <div class="user-options">
-            <!-- <a href="#" class="btn-user btn-userCompare">Сравнить</a>
-            <a href="#" class="btn-user btn-userCart">Корзина</a> -->
+            <a href="#" class="btn-user btn-userCompare">Сравнить</a>
+            <a href="#" class="btn-user btn-userCart">Корзина</a>
           </div>
 
         </div>
 
-        <div class="footer-line clearfix">
+        <div class="footer-line">
 
           <span class="address">
-            <!-- г. Москва, ул. Строителей, 15 -->
+            г. Москва, ул. Строителей, 15
           </span>
 
           <div class="footer-links">
-            <!-- <a href="#" class="btn-nav">Доставка</a>
+            <a href="#" class="btn-nav">Доставка</a>
             <a href="#" class="btn-nav">Гарантия</a>
-            <a href="#" class="btn-nav">Контакты</a> -->
+            <a href="#" class="btn-nav">Контакты</a>
           </div>
 
           <span class="tel">
-            <!-- Тел.: +7 (495) 495-95-95 -->
+            Тел.: +7 (495) 495-95-95
           </span>
 
         </div>
 
-        <div class="footer-line clearfix">
+        <div class="footer-line">
 
           <span class="footer-strip">
+            декор.полоса
           </span>
 
           <div class="footer-social">
-            <!-- <a href="#" class="btn-social btn-social-fb">Фейсбук</a>
+            <a href="#" class="btn-social btn-social-fb">Фейсбук</a>
             <a href="#" class="btn-social btn-social-inst">Инстаграм</a>
-            <a href="#" class="btn-social btn-social-twitter">Твиттер</a> -->
+            <a href="#" class="btn-social btn-social-twitter">Твиттер</a>
           </div>
 
           <div class="copyright">
-            <!-- <a href="https://htmlacademy.ru/"><img src="img/htmlacademy.png" width="27" height="34" alt="HTMLacademy лого"></a> -->
+            <a href="https://htmlacademy.ru/">лого академии</a>
           </div>
 
         </div>

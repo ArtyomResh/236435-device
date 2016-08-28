@@ -3,40 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   </head>
-  <body class="body-index">
+  <body>
 
     <!--Хедер-->
 
-    <header class="main-header index-header">
+    <header class="main-header main-header-index">
       <div class="container">
 
         <div class="logo">
-          <!-- DEVICE -->
+          Device
         </div>
 
         <div class="header-line user-line clearfix">
           <div class="site-search">
-            <!-- <form action="#" method="get">
+            <form action="#" method="get">
               <label for="search">
-                Здесь будет иконка из иконочного шрифта в виде лупы
+                <!-- Здесь будет иконка из иконочного шрифта в виде лупы -->
               </label>
               <input type="search" name="search" id="search" placeholder="Поиск по сайту">
               <a href="#" class="btn-search">Найти</a>
-            </form> -->
+            </form>
           </div>
 
           <div class="user-block">
-            <!-- <a href="#" class="btn-user btn-userName">Валентин Петухов</a>
+            <a href="#" class="btn-user btn-userName hidden">Валентин Петухов</a>
             <a href="#" class="btn-user btn-userLogin">Войти</a>
-            <a href="#" class="btn-user btn-userLogout">Выйти</a> -->
+            <a href="#" class="btn-user btn-userLogout hidden">Выйти</a>
           </div>
 
           <div class="user-options">
-            <!-- <a href="#" class="btn-user btn-userCompare">Сравнить</a>
-            <a href="#" class="btn-user btn-userCart">Корзина</a> -->
+            <a href="#" class="btn-user btn-userCompare">Сравнить</a>
+            <a href="#" class="btn-user btn-userCart">Корзина</a>
           </div>
         </div>
 
@@ -49,12 +49,7 @@
               </li>
               <li>
                 <input type="checkbox" id="sub-menuPorter">
-                <label for="sub-menuPorter">
-                  <a class="sub-menuToggles">
-                    <span class="fa fa-plus"></span>
-                    <span class="fa fa-minus"></span>
-                  </a>
-                </label>
+                <label for="sub-menuPorter"></label>
                 <ul class="sub-menu hidden">
                   <li class="column-1">
                     <ul>
@@ -62,7 +57,7 @@
                         <a href="#">Виртуальная реальность</a>
                       </li>
                       <li>
-                        <a class="current-page">Моноподы для селфи</a>
+                        <a href="catalog.html" class="current-page">Моноподы для селфи</a>
                       </li>
                       <li>
                         <a href="#">Экшн-камеры</a>
@@ -113,48 +108,32 @@
 
         <article class="promo-slide clearfix">
           <div class="promo-image">
-            <!-- <img src="img/slider-1.png" width="420" height="527" alt="Селфи палка"> -->
+            <img src="img/slider-1.png" width="384" height="486" alt="Селфи палка">
           </div>
           <div class="promo-content">
-            <!-- <b>
-              Делай селфи,<br>
-              как Бен Стиллер!
+            <b>
+              <span>Делай селфи,<br>
+                как Бен Стиллер!
+              </span>
             </b>
             <p>
               Самая длинная палка для селфи доступна в нашем магазине.
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-            </p> -->
+            </p>
 
-            <div class="slider-options clearfix">
-              <a href="#" class="btn promo-details">Подробнее</a>
-
-
-              <div class="slider-control">
-                <!-- <ul>
-                  <li>
-                    <a class="active"></a>
-                  </li>
-                  <li>
-                    <a href="#"></a>
-                  </li>
-                  <li>
-                    <a href="#"></a>
-                  </li>
-                </ul> -->
-              </div>
-            </div>
+            <a href="#" class="btn promo-details"><span>Подробнее</span></a>
 
             <div class="promo-attribute">
-              <!-- <span class="promo-attrTitle">8,5 метров</span> attr-attribute
-              <span class="promo-attrDesc">Длинна палки</span> desc-decription -->
+              <span class="promo-attrTitle">8,5 м</span><br> <!--attr-attribute-->
+              <span class="promo-attrDesc">Длина палки</span> <!--desc-decription-->
             </div>
             <div class="promo-attribute">
-              <!-- <span class="promo-attrTitle">5 кг</span>
-              <span class="promo-attrDesc">Вес палки</span> -->
+              <span class="promo-attrTitle">5 кг</span><br>
+              <span class="promo-attrDesc">Вес палки</span>
             </div>
             <div class="promo-attribute">
-              <!-- <span class="promo-attrTitle">Карбон</span>
-              <span class="promo-attrDesc">Материал</span> -->
+              <span class="promo-attrTitle">Карбон</span><br>
+              <span class="promo-attrDesc">Материал</span>
             </div>
           </div>
         </article>
@@ -163,36 +142,24 @@
 
         <article class="promo-slide clearfix hidden">
           <div class="promo-image">
-            <img src="img/slider-2.png" width="420" height="527" alt="Фитнесс браслет">
+            <img src="img/slider-2.png" width="345" height="485" alt="Фитнесс браслет">
           </div>
           <div class="promo-content">
             <b>
-              Худеем<br>
-              правильно!
+              <span>
+                Худеем<br>
+                правильно!
+              </span>
             </b>
             <p>
-              Мотивирующие фитнесс-браслеты помогут найти в себе силы
+              Мотивирующие фитнесс-браслеты помогут найти в себе силы<br>
               не пропускать занятия и соблюдать диету.
             </p>
 
-            <a href="#" class="btn promo-details">Подробнее</a>
-
-            <div class="slider-control">
-              <ul>
-                <li>
-                  <a href="#"></a>
-                </li>
-                <li>
-                  <a class="active"></a>
-                </li>
-                <li>
-                  <a href="#"></a>
-                </li>
-              </ul>
-            </div>
+            <a href="#" class="btn promo-details"><span>Подробнее</span></a>
 
             <div class="promo-attribute">
-              <span class="promo-attrTitle">48 часов</span>
+              <span class="promo-attrTitle">48 часов</span><br>
               <span class="promo-attrDesc">Без подзарядки</span>
             </div>
           </div>
@@ -206,40 +173,42 @@
           </div>
           <div class="promo-content">
             <b>
-              Порхает как бабочка<br>
-              жалит как пчела!
+              <span>
+                Порхает как бабочка<br>
+                жалит как пчела!
+              </span>
             </b>
             <p>
-              Этот обычный, на первый взгляд, квадрокоптер оснащен
+              Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
               мощным лазером, замаскированным под стандартную камеру.
             </p>
 
-            <a href="#" class="btn promo-details">Подробнее</a>
-
-            <div class="slider-control">
-              <ul>
-                <li>
-                  <a href="#"></a>
-                </li>
-                <li>
-                  <a href="#"></a>
-                </li>
-                <li>
-                  <a class="active"></a>
-                </li>
-              </ul>
-            </div>
+            <a href="#" class="btn promo-details"><span>Подробнее</span></a>
 
             <div class="promo-attribute">
-              <span class="promo-attrTitle">800 м</span>
+              <span class="promo-attrTitle">800 м</span><br>
               <span class="promo-attrDesc">Дальность полета</span>
             </div>
             <div class="promo-attribute">
-              <span class="promo-attrTitle">50 м</span>
+              <span class="promo-attrTitle">50 м</span><br>
               <span class="promo-attrDesc">Радиус поражения</span>
             </div>
           </div>
         </article>
+
+        <div class="slider-control">
+          <ul>
+            <li>
+              <a href="#" class="current">Слайд-1</a>
+            </li>
+            <li>
+              <a href="#">Слайд-2</a>
+            </li>
+            <li>
+              <a href="#">Слайд-3</a>
+            </li>
+          </ul>
+        </div>
 
       </section>
 
@@ -254,10 +223,10 @@
                 </p>
               </a>
 
-              <a href="#" class="btn-popular">
+              <a href="catalog.html" class="btn-popular">
                 <img src="img/popular-2.png" width="86" height="117" alt="Моноподы">
                 <p>
-                  Моноподы для селфи
+                  Моноподы<br>для селфи
                 </p>
               </a>
 
@@ -295,19 +264,19 @@
 
       <section class="slider services">
         <div class="container-WP clearfix">
-          <div class="services-menu">
+          <div class="services-nav">
 
-              <!-- <ul>
+              <ul>
                 <li>
-                  <a href="#" class="btn btn-services btn-active">Доставка</a> <Назвал "btn" потому что похожие кнопки раскиданы по всему сайту. Сложно им всем дать один класс (кроме btn)
+                  <a href="#" class="btn btn-services btn-active"><span>Доставка</span></a> <!--Назвал "btn" потому что похожие кнопки раскиданы по всему сайту. Сложно им всем дать один класс (кроме btn)-->
                 </li>
                 <li>
-                  <a href="#" class="btn btn-services btn-active">Гарантия</a> В styleguide они имеют состояния отличные от других .btn, поэтому добавил им ещё один класс btn-services
+                  <a href="#" class="btn btn-services"><span>Гарантия</span></a> <!--В styleguide они имеют состояния отличные от других .btn, поэтому добавил им ещё один класс btn-services-->
                 </li>
                 <li>
-                  <a href="#" class="btn btn-services btn-active">Кредит</a>
+                  <a href="#" class="btn btn-services"><span>Кредит</span></a>
                 </li>
-              </ul> -->
+              </ul>
 
           </div>
 
@@ -316,14 +285,14 @@
             <!--Первый слайд-->
 
             <div class="services-slide services-slideDelivery">
-              <!-- <h2>
+              <h2>
                 Доставка
               </h2>
               <p>
                 Мы с удовольствием доставим ваш товар прямо к вашему
                 подъезду совершенно бесплатно! Ведь мы неплохо
                 заработаем, поднимая его на ваш этаж.
-              </p> -->
+              </p>
             </div>
 
             <!--Второй слайд-->
@@ -334,7 +303,7 @@
               </h2>
               <p>
                 Если из-за возгарания купленного у нас товара у вас сгорит
-                дом — не переживайте, мы выдадим вам новый.
+                дом — не переживайте, мы выдадим вам новый.<br>
                 Товар, не дом, конечно же.
               </p>
             </div>
@@ -347,10 +316,11 @@
               </h2>
               <p>
                 Залезть в долговую яму стало проще! Кредитные
-                консультанты подберут для вас наиболее выгодные
+                консультанты подберут для вас наиболее выгодные<br>
                 условия кредита. Выгодные для нашего банка, разумеется.
               </p>
             </div>
+
           </div>
         </div>
       </section>
@@ -358,7 +328,7 @@
       <!--Блок партнёров-->
 
       <section class="partners">
-          
+
               <a href="#" class="btn-partner">
                 <img src="img/logo-1-colored.png" width="260" height="100" alt="Логотип DJI">
               </a>
@@ -382,7 +352,7 @@
        <!--Блок "О нас"-->
        <div class="container-WP clearfix">
          <div class="info-block">
-            <!-- <h2>
+            <h2>
               О нас
             </h2>
             <p>
@@ -395,31 +365,33 @@
             </p>
             <ul>
               <li>
-                <a href="#" class="btn-infoCoop">Деловые линии</a> Coop-cooperation
+                Деловые Линии <!--Coop-cooperation-->
               </li>
               <li>
-                <a href="#" class="btn-infoCoop">Автотрейдинг</a>
+                Автотрейдинг
               </li>
               <li>
-                <a href="#" class="btn-infoCoop">ЖелДорЭкспедиция</a>
+                ЖелДорЭкспедиция
               </li>
             </ul>
 
-            <a href="#" class="btn">Подробнее о нас</a> -->
+            <a href="#" class="btn btn-info"><span>Подробнее о нас</span></a>
           </div>
 
          <!--Блок "Контакты"-->
 
          <div class="info-block">
-            <!-- <h2>
+            <h2>
               Контакты
             </h2>
             <p>
               Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
               проверить работоспособность покупки. Всякое бывает.
             </p>
-            <a href="#" class="map"><img src="img/map.jpg" width="560" height="222" alt="Карта"></a>
-            <a href="#" class="btn">Напишите нам</a> -->
+            <a href="https://goo.gl/maps/R7sCUJavnXy" class="map">
+              <img src="img/map.jpg" width="560" height="222" alt="Местоположение на карте">
+            </a>
+            <a href="#" class="btn btn-info"><span>Напишите нам</span></a>
           </div>
         </div>
       </section>
@@ -430,21 +402,21 @@
 
     <footer class="main-footer">
       <div class="container-WP">
-        <div class="footer-line">
+        <div class="footer-line clearfix">
 
           <div class="logo">
-            <!-- DEVICE -->
+            DEVICE
           </div>
 
           <div class="user-block">
-            <!-- <a href="#" class="btn-user btn-userName">Валентин Петухов</a>
+            <a href="#" class="btn-user btn-userName hidden">Валентин Петухов</a>
             <a href="#" class="btn-user btn-userLogin">Войти</a>
-            <a href="#" class="btn-user btn-userLogout">Выйти</a> -->
+            <a href="#" class="btn-user btn-userLogout hidden">Выйти</a>
           </div>
 
           <div class="user-options">
-            <!-- <a href="#" class="btn-user btn-userCompare">Сравнить</a>
-            <a href="#" class="btn-user btn-userCart">Корзина</a> -->
+            <a href="#" class="btn-user btn-userCompare">Сравнить</a>
+            <a href="#" class="btn-user btn-userCart">Корзина</a>
           </div>
 
         </div>
@@ -452,17 +424,17 @@
         <div class="footer-line">
 
           <span class="address">
-            <!-- г. Москва, ул. Строителей, 15 -->
+            г. Москва, ул. Строителей, 15
           </span>
 
           <div class="footer-links">
-            <!-- <a href="#" class="btn-nav">Доставка</a>
+            <a href="#" class="btn-nav">Доставка</a>
             <a href="#" class="btn-nav">Гарантия</a>
-            <a href="#" class="btn-nav">Контакты</a> -->
+            <a href="#" class="btn-nav">Контакты</a>
           </div>
 
           <span class="tel">
-            <!-- Тел.: +7 (495) 495-95-95 -->
+            Тел.: +7 (495) 495-95-95
           </span>
 
         </div>
@@ -470,21 +442,48 @@
         <div class="footer-line">
 
           <span class="footer-strip">
+            декор.полоса
           </span>
 
           <div class="footer-social">
-            <!-- <a href="#" class="btn-social btn-social-fb">Фейсбук</a>
+            <a href="#" class="btn-social btn-social-fb">Фейсбук</a>
             <a href="#" class="btn-social btn-social-inst">Инстаграм</a>
-            <a href="#" class="btn-social btn-social-twitter">Твиттер</a> -->
+            <a href="#" class="btn-social btn-social-twitter">Твиттер</a>
           </div>
 
           <div class="copyright">
-            <!-- <a href="https://htmlacademy.ru/"><img src="img/htmlacademy.png" width="27" height="34" alt="HTMLacademy лого"></a> -->
+            <a href="https://htmlacademy.ru/">лого академии</a>
           </div>
 
         </div>
       </div>
     </footer>
+
+    <div class="modal-content-wu"> <!--wu-write-us-->
+      <button class="modal-content-close" type="button" tittle="Закрыть">Закрыть</button>
+      <form class="write-us-form" action="#" method="post">
+        <div class="form-columns clearfix">
+          <div class="form-column left-column">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+          </div>
+          <div class="form-column right-column">
+            <label for="e-mail">Ваш e-mail:</label>
+            <input type="email" name="e-mail" id="e-mail" placeholder="Для отправки ответа">
+          </div>
+        </div>
+        <label for="message">Текст письма:</label>
+        <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+        <button class="btn" type="submit"><span>Отправить</span></button>
+      </form>
+    </div>
+
+    <div class="modal-content-map">
+      <button class="modal-content-close" type="button" tittle="Закрыть">Закрыть</button>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2249.123708110617!2d37.52734231314214!3d55.686836963576624!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2s!4v1472389558527" width="960" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <div class="modal-overlay"></div>
 
   </body>
 </html>
