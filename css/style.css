@@ -1748,19 +1748,6 @@ input.max-value {
 }
 
 /*////////////////////////GRAYSACLE//////////////////////////*/
-/*.btn-partner img {
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
-          filter: gray;
-
-  opacity: 0.2;
-}
-
-.btn-partner:hover img {
-  -webkit-filter: none;
-          filter: none;
-  opacity: 1;
-}*/
 
 .grayscale {
   -webkit-filter: grayscale(1);
@@ -1780,26 +1767,30 @@ input.max-value {
 }
 
 /* Background element */
+
 .grayscale.grayscale-replaced {
   -webkit-filter: none;
   filter:         none;
 }
 
-.grayscale.grayscale-replaced > svg {
-  -webkit-transition: opacity .5s ease;
-  transition:         opacity .5s ease;
-
-  opacity: 1;
-}
-
-.grayscale.grayscale-replaced.grayscale-off,
-.grayscale.grayscale-replaced.grayscale-fade:hover {
-  opacity: 1;
-}
-
 .grayscale.grayscale-replaced.grayscale-off > svg,
 .grayscale.grayscale-replaced.grayscale-fade:hover > svg {
   opacity: 0;
+}
+
+/*Хак для правильного отображения Opacity в IE10*/
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .grayscale {
+     opacity: 1;
+  }
+  .partners .btn-partner {
+    opacity: 0.2;
+  }
+
+  .partners .btn-partner:hover {
+    opacity: 1;
+  }
 }
 
 /*///////////////////////////////////////////////////////*/
