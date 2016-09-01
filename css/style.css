@@ -229,7 +229,7 @@ h3,
 
 .site-search label {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 3px;
   transform: translate(0, -50%);
 
@@ -241,7 +241,10 @@ h3,
 
 #search {
   width: 290px;
+  margin-top: 7px;
   margin-left: 40px;
+
+  line-height: normal;
 
   background-color: transparent;
   border: none;
@@ -439,7 +442,6 @@ h3,
 .main-footer .user-options {
   width: 225px;
   margin-top: -4px;
-  margin-left: 20px;
 
   text-align: right;
 }
@@ -604,26 +606,35 @@ h3,
   vertical-align: top;
 }
 
-.copyright:before {
+.copyright:before,
+.copyright a {
   position: absolute;
   top:0;
   right:0;
 
   width: 27px;
   height: 34px;
+}
 
-  background: url("../img/sprite.png") no-repeat -180px -5px;
+.copyright:before {
+    background: url("../img/sprite.png") no-repeat -180px -5px;
 
-  content: "";
+    content: "";
+}
+
+.copyright a {
+  visibility: hidden;
+}
+
+.copyright:hover > a {
+  visibility: visible;
 }
 
 .copyright:hover::before {
-  background-position: -217px -5px;
+  display: none;
 }
 
-.copyright:active::before {
-  background-position: -217px -5px;
-
+.copyright a:active {
   opacity: 0.3;
 }
 
@@ -644,8 +655,8 @@ h3,
 }
 
 .nav-main > ul > li:nth-child(1) {
-  width: 220px;
-  margin-right: 10px;
+  width: 225px;
+  margin-right: 5px;
 }
 
 .nav-main > ul > li:nth-child(2) {
