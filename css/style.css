@@ -1783,14 +1783,17 @@ input.max-value {
 .grayscale.grayscale-replaced {
   -webkit-filter: none;
   filter:         none;
-
-  opacity: 1;
 }
 
 .grayscale.grayscale-replaced > svg {
   -webkit-transition: opacity .5s ease;
   transition:         opacity .5s ease;
 
+  opacity: 1;
+}
+
+.grayscale.grayscale-replaced.grayscale-off,
+.grayscale.grayscale-replaced.grayscale-fade:hover {
   opacity: 1;
 }
 
