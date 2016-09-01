@@ -514,6 +514,7 @@ h3,
 
   font-size: 0;
   text-align: justify;
+  -ms-text-justify: newspaper;
   vertical-align: top;
 }
 
@@ -638,6 +639,8 @@ h3,
 
 .nav-main > ul > li {
   display: inline-block;
+
+  vertical-align: top;
 }
 
 .nav-main > ul > li:nth-child(1) {
@@ -709,6 +712,9 @@ li.column-3 {
 
 label[for="sub-menuPorter"] {
   position: relative;
+  top: 17px;
+
+  cursor: pointer;
 }
 
 label[for="sub-menuPorter"]::before,
@@ -1320,6 +1326,7 @@ input.max-value {
 
   font-size:0;
   text-align: justify;
+  -ms-text-justify: newspaper;
   vertical-align: top;
 
   background-color: #ebebeb;
@@ -1740,15 +1747,39 @@ input.max-value {
   vertical-align: top;
 }
 
-.btn-partner img {
+/*////////////////////////GRAYSACLE//////////////////////////*/
+/*.btn-partner img {
   -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+          filter: gray;
+
   opacity: 0.2;
 }
 
 .btn-partner:hover img {
   -webkit-filter: none;
+          filter: none;
+  opacity: 1;
+}*/
+
+.grayscale {
+  -webkit-filter: grayscale(1);
+          filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='saturate' values='0'/></filter></svg>#grayscale");
+          filter: grayscale(1);
+          filter: gray;
+
+  opacity: 0.2;
+}
+
+.grayscale.grayscale-off,
+.grayscale.grayscale-fade:hover {
+  -webkit-filter: grayscale(0);
+  filter:         grayscale(0);
+
   opacity: 1;
 }
+
+/*///////////////////////////////////////////////////////*/
 
 .btn-partner + .btn-partner {
   margin-left: 40px;
